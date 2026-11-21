@@ -1,0 +1,3089 @@
+well
+if
+any
+man
+alive
+possessed
+the
+knowledge
+May
+that
+be
+truly
+said
+of
+us
+and
+all
+of
+us
+And
+so
+as
+Tiny
+Tim
+observed
+God
+bless
+Us
+Every
+One
+sofia@MacBookAir Downloads % tr -sc 'a-zA-Z0-9' '\n' < Carol.txt |sort|uniq -c|sort -nr|less
+sofia@MacBookAir Downloads % tr -sc 'a-zA-Z0-9' '\n' < Carol.txt |sort|uniq -c|sort -nr|less
+sofia@MacBookAir Downloads % tr -sc 'a-zA-Z0-9' '\n' < Carol.txt |sort|uniq -c|sort -nr|less
+sofia@MacBookAir Downloads % CLEAR
+
+sofia@MacBookAir Downloads % grep -c '^@G:' SLI.txt
+15
+sofia@MacBookAir Downloads % grep -c '\*CHI:' SLI.txt
+68
+sofia@MacBookAir Downloads % grep ‘\[\*m:...]’ SLI.txt
+sofia@MacBookAir Downloads % grep '\[\* m:' SLI.txt
+
+*CHI:	they take their hat [* m:0s] [^ emorph] off [^ eu] .
+*CHI:	she want [* m:03s] [^ ev] the bucket [^ eu] .
+*CHI:	she want [* m:03s] the bucket [^ ns] .
+*CHI:	she want [* m:03s] the bucket [^ ns] .
+sofia@MacBookAir Downloads % grep -o ‘\[\*m:0ing  SLI.txt | grep -oE ‘m:[^]}*’ |sed ‘s|m://’
+zsh: no such file or directory: m://’
+sed: 1: "‘s
+": invalid command code ?
+grep: brackets ([ ]) not balanced
+zsh: no matches found: ‘m:[^]}*’
+sofia@MacBookAir Downloads % grep -o ‘\[\*m:0ing  SLI.txt | grep -oE ‘m:[^]*’ |sed ‘s|m://’
+zsh: no such file or directory: m://’
+grep: brackets ([ ]) not balanced
+sed: 1: "‘s
+": invalid command code ?
+zsh: no matches found: ‘m:[^]*’
+sofia@MacBookAir Downloads % grep -oE '\[\^ [a-z]+' SLI.txt|sed 's/\[\^//'|sort|uniq -c|sort -nr
+
+  24  eu
+  23  ns
+   8  earg
+   7  ev
+   5  ew
+   5  emorph
+   4  epronoun
+   2  other
+   1  frag
+   1  elexical
+sofia@MacBookAir Downloads % grep ‘\[\* m:’ SLI.txt
+
+grep: brackets ([ ]) not balanced
+sofia@MacBookAir Downloads % grep '\[\* m:' SLI.txt
+
+*CHI:	they take their hat [* m:0s] [^ emorph] off [^ eu] .
+*CHI:	she want [* m:03s] [^ ev] the bucket [^ eu] .
+*CHI:	she want [* m:03s] the bucket [^ ns] .
+*CHI:	she want [* m:03s] the bucket [^ ns] .
+sofia@MacBookAir Downloads % grep -o “\[\* m:[^]]*\]” SLI.txt
+zsh: no matches found: m:[^]]*]”
+sofia@MacBookAir Downloads % grep -o '\[\* m:[^]]*\]' SLI.txt
+[* m:0s]
+[* m:03s]
+[* m:03s]
+[* m:03s]
+sofia@MacBookAir Downloads % grep -oE '\[\^ [a-z]+' SLI.txt|sed 's/\[\^//'|sort|uniq -c|sort -nr
+
+  24  eu
+  23  ns
+   8  earg
+   7  ev
+   5  ew
+   5  emorph
+   4  epronoun
+   2  other
+   1  frag
+   1  elexical
+sofia@MacBookAir Downloads % grep -o “\[\^ x [0-9]*\]” SLI.txt
+
+zsh: no matches found: [0-9]*]”
+sofia@MacBookAir Downloads % grep -o ‘\[\^ x [0-9]*\]’ SLI.txt
+
+zsh: no matches found: [0-9]*]’
+sofia@MacBookAir Downloads % grep ‘\[^ x N]
+grep: brackets ([ ]) not balanced
+sofia@MacBookAir Downloads % grep ‘\[^ x N] SLI.txt
+grep: brackets ([ ]) not balanced
+sofia@MacBookAir Downloads % grep -oE '\[\^ x [0-9]+\]' SLI.txt
+sofia@MacBookAir Downloads % grep -o '\[\^ x [0-9]+\]' SLI.txt 
+sofia@MacBookAir Downloads % grep -nF '[^ x' SLI.txt | head
+sofia@MacBookAir Downloads % ls -l SLI.txt
+-rw-r--r--@ 1 sofia  staff  40139 Sep 16 15:40 SLI.txt
+sofia@MacBookAir Downloads % grep -oE ‘\[\^ x [0-9] +\]’ SLI.txt
+
+zsh: no matches found: [0-9]
+sofia@MacBookAir Downloads % grep -c ‘\[\
+> 
+sofia@MacBookAir Downloads % grep -nF '[^ x' SLI.txt
+sofia@MacBookAir Downloads % grep ‘(%com:|%act:|%xov)’ SLI.txt
+zsh: no matches found: ‘(%com:|%act:|%xov)’
+sofia@MacBookAir Downloads % grep '(%com:|%act:|%xov)' SLI.txt
+sofia@MacBookAir Downloads % grep -o “\[% [^]]*\]” SLI.txt
+zsh: no matches found: [^]]*]”
+sofia@MacBookAir Downloads % grep -o '\[% [^]]*\]' SLI.txt
+[% dog splashing water on girl]
+[% possibly referring to the boy]
+sofia@MacBookAir Downloads % grep ‘@ID.*CHI’ SLI.txt | wc -l
+zsh: no matches found: ‘@ID.*CHI’
+       0
+sofia@MacBookAir Downloads % grep '@ID.*CHI' SLI.txt | wc -l
+       1
+sofia@MacBookAir Downloads % grep -o '\bxxx\b' SLI.txt | wc -l
+       6
+sofia@MacBookAir Downloads % grep -o 'is' SLI.txt | wc -l
+      83
+sofia@MacBookAir Downloads % Grep -ow 'is' SLI.txt | wc -l
+      21
+sofia@MacBookAir Downloads % grep -A2 'CHI' SLI.txt
+@Participants:	INV Investigator, CHI Target_Child
+@ID:	eng|EisenbergGuo|INV|||||Investigator|||
+@ID:	eng|EisenbergGuo|CHI|3;06.|male|||Target_Child|||
+@Comment:	batchalign3 8e6fa18 | morphosyntax: stanza:1.12.2:noretok:native-mwt9 | 2026-09-09T08:49:40Z
+@Comment:	Language = English
+--
+*CHI:	<he found the &~uh> [/] he found the cookies .
+%mor:	pron|he-Prs-Nom-S3 verb|find-Fin-Ind-Past-S3-Irr det|the-Def-Art noun|cookie-Plur-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+--
+*CHI:	he [^ ew:she] [^ epronoun] got wet [^ eu] .
+%mor:	pron|he-Prs-Nom-S3 verb|get-Fin-Ind-Past-S3-Irr adj|wet-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|XCOMP 4|2|PUNCT
+--
+*CHI:	he [^ ew:she] [^ epronoun] got wet on her shoe [^ eu] .
+%mor:	pron|he-Prs-Nom-S3 verb|get-Fin-Ind-Past-S3-Irr adj|wet-S1 adp|on pron|her-Prs-Gen-S3 noun|shoe .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|XCOMP 4|6|CASE 5|6|NMOD-POSS 6|2|OBL 7|2|PUNCT
+*CHI:	xxx shoes .
+%mor:	noun|shoe-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+--
+*CHI:	he [^ ew:she] [^ epronoun] found the shoe in the water [^ eu] .
+%mor:	pron|he-Prs-Nom-S3 verb|find-Fin-Ind-Past-S3-Irr det|the-Def-Art noun|shoe-Acc adp|in det|the-Def-Art noun|water .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|7|CASE 6|7|DET 7|2|OBL 8|2|PUNCT
+--
+*CHI:	he's putting [^ earg] [^ earg] [^ eu] .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|put-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	the rest fall down .
+%mor:	det|the-Def-Art noun|rest verb|fall-Fin-Ind-S adv|down .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+--
+*CHI:	[^ earg] fall down [^ eu] .
+%mor:	verb|fall-Fin-Imp-S adp|down .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+--
+*CHI:	I need 0a tissue [^ ns] .
+%mor:	pron|I-Prs-Nom-S1 verb|need-Fin-Ind-Pres-S1 noun|tissue-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+--
+*CHI:	I need 0a tissue [^ ns] .
+%mor:	pron|I-Prs-Nom-S1 verb|need-Fin-Ind-Pres-S1 noun|tissue-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+--
+*CHI:	they 0are [^ ev] wearing hats [^ eu] .
+%mor:	pron|they-Prs-Nom-P3 verb|wear-Part-Pres-S noun|hat-Plur-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	they take their hat [* m:0s] [^ emorph] off [^ eu] .
+%mor:	pron|they-Prs-Nom-P3 verb|take-Fin-Ind-Pres-P3 pron|their-Prs-Gen-P3 noun|hat-Acc adp|off .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|NMOD-POSS 4|2|OBJ 5|2|COMPOUND-PRT 6|2|PUNCT
+--
+*CHI:	she 0is [^ ev] hurt [^ eu] .
+%mor:	pron|she-Prs-Nom-S3 verb|hurt-Fin-Ind-Past-S3-Irr .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+--
+*CHI:	they hurt me .
+%mor:	pron|they-Prs-Nom-P3 verb|hurt-Fin-Ind-Past-P3-Irr pron|I-Prs-Acc-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+--
+*CHI:	xxx falling down .
+%mor:	verb|fall-Part-Pres-S adp|down .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+--
+*CHI:	the cake to falling [^ other] down [^ eu] .
+%mor:	det|the-Def-Art noun|cake sconj|to verb|fall-Ger-S adp|down .
+%gra:	1|2|DET 2|0|ROOT 3|4|MARK 4|2|ACL 5|4|COMPOUND-PRT 6|2|PUNCT
+--
+*CHI:	it's gonna fall down .
+%mor:	pron|it-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adv|gonna verb|fall-Inf-S adp|down .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|ADVMOD 6|4|PUNCT
+--
+*CHI:	the cake is gonna get a big mess [^ eu] .
+%mor:	det|the-Def-Art noun|cake aux|be-Fin-Ind-Pres-S3 adv|gonna verb|get-Inf-S det|a-Ind-Art adj|big-S1 noun|mess-Acc .
+%gra:	1|2|DET 2|5|NSUBJ 3|5|AUX 4|5|ADVMOD 5|0|ROOT 6|8|DET 7|8|AMOD 8|5|OBJ 9|5|PUNCT
+--
+*CHI:	the cake is gonna get a mess [^ ns] .
+%mor:	det|the-Def-Art noun|cake aux|be-Fin-Ind-Pres-S3 adv|gonna verb|get-Inf-S det|a-Ind-Art noun|mess-Acc .
+%gra:	1|2|DET 2|5|NSUBJ 3|5|AUX 4|5|ADVMOD 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+--
+*CHI:	&~um the cake is gonna get a mess [^ ns] .
+%mor:	det|the-Def-Art noun|cake aux|be-Fin-Ind-Pres-S3 adv|gonna verb|get-Inf-S det|a-Ind-Art noun|mess-Acc .
+%gra:	1|2|DET 2|5|NSUBJ 3|5|AUX 4|5|ADVMOD 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+--
+*CHI:	it's raining .
+%mor:	pron|it-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|rain-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	it's raining [^ ns] .
+%mor:	pron|it-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|rain-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	a doggy , mommy and daddy [^ ns] .
+%mor:	det|a-Ind-Art adj|doggy-S1 cm|cm noun|mommy cconj|and noun|daddy .
+%gra:	1|2|DET 2|0|ROOT 3|4|PUNCT 4|2|CONJ 5|6|CC 6|2|CONJ 7|2|PUNCT
+--
+*CHI:	he's gonna fall down .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|fall-Inf-S adp|down .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|ADVMOD 6|4|PUNCT
+--
+*CHI:	he's running .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|run-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	<xxx> [/] he don't [^ ew:doesn't] [^ ev] get hurt [^ eu] .
+%mor:	pron|he-Prs-Nom-S3 aux|do-Fin-Ind-Pres-S3~part|not aux|get-Inf-S verb|hurt-Part-Past-S-Irr .
+%gra:	1|5|NSUBJ-PASS 2|5|AUX 3|5|ADVMOD 4|5|AUX-PASS 5|0|ROOT 6|5|PUNCT
+--
+*CHI:	[^ earg] fall down [^ eu] .
+%mor:	verb|fall-Fin-Imp-S adp|down .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+--
+*CHI:	he's gonna fall down .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|fall-Inf-S adp|down .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|ADVMOD 6|4|PUNCT
+--
+*CHI:	he fall [^ elexical] [^ ev] all the water on his hands [% dog splashing water on girl] [^ eu] .
+%mor:	pron|he-Prs-Nom-S3 verb|fall-Fin-Ind-Pres-S det|all-Def-Tot det|the-Def-Art noun|water-Acc adp|on pron|his-Prs-Gen-S3 noun|hand-Plur .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|DET-PREDET 4|5|DET 5|2|OBJ 6|8|CASE 7|8|NMOD-POSS 8|2|OBL 9|2|PUNCT
+--
+*CHI:	<he> [/] he put the water on his hands [% possibly referring to the boy] .
+%mor:	pron|he-Prs-Nom-S3 verb|put-Fin-Ind-Past-S3-Irr det|the-Def-Art noun|water-Acc adp|on pron|his-Prs-Gen-S3 noun|hand-Plur .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|7|CASE 6|7|NMOD-POSS 7|2|OBL 8|2|PUNCT
+*CHI:	I need 0a tissue [^ ns] .
+%mor:	pron|I-Prs-Nom-S1 verb|need-Fin-Ind-Pres-S1 noun|tissue-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+--
+*CHI:	water [^ ns] .
+%mor:	noun|water .
+%gra:	1|0|ROOT 2|1|PUNCT
+--
+*CHI:	he's brushing to the water on her arms [^ other] [^ eu] .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|brush-Part-Pres-S adp|to det|the-Def-Art noun|water adp|on pron|her-Prs-Gen-S3 noun|arm-Plur .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|9|CASE 8|9|NMOD-POSS 9|3|OBL 10|3|PUNCT
+--
+*CHI:	he put the water on her arms .
+%mor:	pron|he-Prs-Nom-S3 verb|put-Fin-Ind-Past-S3-Irr det|the-Def-Art noun|water-Acc adp|on pron|her-Prs-Gen-S3 noun|arm-Plur .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|7|CASE 6|7|NMOD-POSS 7|2|OBL 8|2|PUNCT
+--
+*CHI:	xxx I don't wanna be xxx .
+%mor:	pron|I-Prs-Nom-S1 aux|do-Fin-Ind-Pres-S1~part|not adv|wanna aux|be-Inf-S .
+%gra:	1|5|NSUBJ 2|5|AUX 3|5|ADVMOD 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+--
+*CHI:	she's giving [^ earg] 0a [^ emorph] donut [^ eu] .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|give-Part-Pres-S noun|donut-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+--
+*CHI:	she's gonna give [^ earg] a donut [^ eu] .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|give-Inf-S det|a-Ind-Art noun|donut-Acc .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+--
+*CHI:	she's gonna give a donut [^ ns] .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|give-Inf-S det|a-Ind-Art noun|donut-Acc .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+--
+*CHI:	he's putting xxx +...
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|put-Part-Pres-S +...
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*CHI:	I need 0a tissue [^ ns] .
+%mor:	pron|I-Prs-Nom-S1 verb|need-Fin-Ind-Pres-S1 noun|tissue-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+--
+*CHI:	I need 0a tissue [^ ns] .
+%mor:	pron|I-Prs-Nom-S1 verb|need-Fin-Ind-Pres-S1 noun|tissue-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+--
+*CHI:	she's crying .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|cry-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	she's crying [^ ns] .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|cry-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	she's crying [^ ns] .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|cry-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*CHI:	she's crying [^ ns] .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|cry-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	she's crying [^ ns] .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|cry-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*CHI:	she want [* m:03s] [^ ev] the bucket [^ eu] .
+%mor:	pron|she-Prs-Nom-S3 verb|want-Fin-Ind-Pres-S det|the-Def-Art noun|bucket-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+--
+*CHI:	she want [* m:03s] the bucket [^ ns] .
+%mor:	pron|she-Prs-Nom-S3 verb|want-Fin-Ind-Pres-S det|the-Def-Art noun|bucket-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+--
+*CHI:	she want [* m:03s] the bucket [^ ns] .
+%mor:	pron|she-Prs-Nom-S3 verb|want-Fin-Ind-Pres-S det|the-Def-Art noun|bucket-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+--
+*CHI:	the juice fall [^ ev] down [^ eu] .
+%mor:	det|the-Def-Art noun|juice verb|fall-Fin-Ind-Pres-S adv|down .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+--
+*CHI:	this juice is spilling .
+%mor:	det|this-Def-Dem-Sing noun|juice aux|be-Fin-Ind-Pres-S3 verb|spill-Part-Pres-S .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+--
+*CHI:	the juice fall [^ ev] down [^ eu] .
+%mor:	det|the-Def-Art noun|juice verb|fall-Fin-Ind-Pres-S adv|down .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+--
+*CHI:	a house [^ ns] .
+%mor:	det|a-Ind-Art noun|house .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+--
+*CHI:	big snowman [^ frag] [^ eu] .
+%mor:	adj|big-S1 noun|snowman .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+--
+*CHI:	she's gonna put the arm on top of 0the [^ emorph] snowman [^ eu] .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adv|gonna verb|put-Part-Past-S-Irr det|the-Def-Art noun|arm-Acc adp|on noun|top adp|of noun|snowman .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|6|DET 6|4|OBJ 7|8|CASE 8|4|OBL 9|10|CASE 10|8|NMOD 11|4|PUNCT
+*CHI:	I need 0a tissue [^ ns] .
+%mor:	pron|I-Prs-Nom-S1 verb|need-Fin-Ind-Pres-S1 noun|tissue-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+--
+*CHI:	he's running .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|run-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	he's raking [^ earg] [^ eu] .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|rake-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	she's going on the road .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S adp|on det|the-Def-Art noun|road .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+--
+*CHI:	she's going on the road [^ ns] .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S adp|on det|the-Def-Art noun|road .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+--
+*CHI:	she's going on the road [^ ns] .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S adp|on det|the-Def-Art noun|road .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+--
+*CHI:	a tree [^ ns] .
+%mor:	det|a-Ind-Art noun|tree .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+--
+*CHI:	[^ earg] is 0a [^ emorph] cat on 0the [^ emorph] tree [^ eu] .
+%mor:	aux|be-Fin-Ind-Pres-S3 noun|cat adp|on noun|tree .
+%gra:	1|4|COP 2|4|NSUBJ 3|4|CASE 4|0|ROOT 5|4|PUNCT
+--
+*CHI:	she's gonna fall down .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|fall-Inf-S adp|down .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|ADVMOD 6|4|PUNCT
+--
+*CHI:	I need 0a tissue [^ ns] .
+%mor:	pron|I-Prs-Nom-S1 verb|need-Fin-Ind-Pres-S1 noun|tissue-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+--
+*CHI:	he's eating .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|eat-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	he's getting bread out of the toaster .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|get-Part-Pres-S noun|bread-Acc adp|out adp|of det|the-Def-Art noun|toaster .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|8|CASE 6|8|CASE 7|8|DET 8|3|OBL 9|3|PUNCT
+--
+*CHI:	she's [^ ew:he] [^ epronoun] gon(na) put it on her plate [^ eu] .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adv|gonna verb|put-Part-Past-S-Irr pron|it-Prs-Acc-S3 adp|on pron|her-Prs-Gen-S3 noun|plate .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|OBJ 6|8|CASE 7|8|NMOD-POSS 8|4|OBL 9|4|PUNCT
+sofia@MacBookAir Downloads % grep ‘\*CHI’ > chi_SLI.txt
+^C
+sofia@MacBookAir Downloads % grep '\*CHI' > chi_SLI.txt
+^C
+sofia@MacBookAir Downloads % grep '\*CHI' > chi_SLI.txt
+^C
+sofia@MacBookAir Downloads % ls chi_sli.txt
+chi_sli.txt
+sofia@MacBookAir Downloads % pws
+zsh: command not found: pws
+sofia@MacBookAir Downloads % pwd
+/Users/sofia/Downloads
+sofia@MacBookAir Downloads % cd
+sofia@MacBookAir ~ % cd ~/Downloads
+sofia@MacBookAir Downloads % ls grep -c '^@G:' SLI.txt
+ls: -c: No such file or directory
+ls: ^@G:: No such file or directory
+ls: grep: No such file or directory
+SLI.txt
+sofia@MacBookAir Downloads % ls TD.txt
+TD.txt
+sofia@MacBookAir Downloads % grep -c ‘^@G:’ TD.txt
+0
+sofia@MacBookAir Downloads % grep -c ‘^\*CHI:' TD.TXT
+quote> 
+sofia@MacBookAir Downloads % grep -c '^\*CHI:' TD.txt 
+102
+sofia@MacBookAir Downloads % grep '[\* m:' TD.txt 
+grep: brackets ([ ]) not balanced
+sofia@MacBookAir Downloads % grep '[\* m:' TD.txt
+grep: brackets ([ ]) not balanced
+sofia@MacBookAir Downloads % grep -F '[* m:' TD.txt
+*CHI:	the mommy , she stand [* m:03s] [^ ev] like this [^ eu] .
+*CHI:	he's standing and watching him <and> [/] and see [* m:0ing] [^ emorph] if he's falling [^ eu] .
+sofia@MacBookAir Downloads % grep -o '\[\* m:[^]]*\]' TD.txt
+[* m:03s]
+[* m:0ing]
+sofia@MacBookAir Downloads % grep -oE '\[\^ [a-z]+' TD.txt|sed 's/\[\^//'|sort|uniq -c|sort -nr 
+  21  eu
+   9  ew
+   7  ev
+   5  ns
+   5  emorph
+   4  elexical
+   3  earg
+   2  modal
+   2  cat
+   1  other
+   1  epronoun
+   1  econj
+sofia@MacBookAir Downloads % grep -o '\[\^ x [0-9]*\]' TD.txt
+sofia@MacBookAir Downloads % grep -oE '\[\^ x [0-9]+\]' TD.txt
+sofia@MacBookAir Downloads % grep -F '[^ x' TD.txt
+sofia@MacBookAir Downloads % grep -c “\[/\]” TD.TXT
+0
+sofia@MacBookAir Downloads % grep -c '\[/\]' TD.txt
+24
+sofia@MacBookAir Downloads % grep -c “\[>\]” TD.txt 
+grep: brackets ([ ]) not balanced
+sofia@MacBookAir Downloads % grep -c '\[>\]' SLI.txt
+0
+sofia@MacBookAir Downloads % grep -c “\[>\]” TD.txt 
+grep: brackets ([ ]) not balanced
+sofia@MacBookAir Downloads % grep -c '\[>\]' TD.txt 
+1
+sofia@MacBookAir Downloads % grep -c “/[<\]” TD.txt 
+zsh: bad pattern: “/[
+sofia@MacBookAir Downloads % grep -c '/[<\]' TD.txt
+0
+sofia@MacBookAir Downloads % grep -cE ‘^\* [A-Z] +:.*\+\.\.\.$’ TD.txt 
+zsh: no matches found: [A-Z]
+sofia@MacBookAir Downloads % grep -c '^\.+\.\.\.' SLI.txt
+0
+sofia@MacBookAir Downloads % grep -c “^\.+\.\.\.” TD.txt 
+0
+sofia@MacBookAir Downloads % grep -c '^\.+\.\.\.' SLI.txt
+0
+sofia@MacBookAir Downloads % grep -c '^\.+\.\.\.' TD.txt 
+0
+sofia@MacBookAir Downloads % grep -E '^\*[A-Z]{3}:' TD.txt | grep -oE '(^|[[:space:]])0[[:alpha:]]+' | grep -oE '0[[:alpha:]]+$'
+0is
+0is
+0a
+0are
+sofia@MacBookAir Downloads % grep -o '[a-zA-Z]*\@[on]' SLI.txt
+sofia@MacBookAir Downloads % grep -oE '[[:alpha:]]+@[on]' TD.txt | sed 's/@[on]$//'
+sofia@MacBookAir Downloads % :grep ‘(%com:|%act:|%xov)’ TD.txt  
+zsh: no matches found: ‘(%com:|%act:|%xov)’
+sofia@MacBookAir Downloads % grep -o '[a-zA-Z]*\@[on]' TD.txt 
+sofia@MacBookAir Downloads % grep -o “\[% [^]]*\]” TD.txt 
+zsh: no matches found: [^]]*]”
+sofia@MacBookAir Downloads % grep -o '\[% [^]]*\]' TD.txt
+[% “he” referring to the boy who the girl tripped over]
+sofia@MacBookAir Downloads % grep “@ID.*CHI” SLI.txt | wc -l
+zsh: no matches found: “@ID.*CHI”
+       0
+sofia@MacBookAir Downloads %  grep -o “\bxxx\b” SLI.txt | wc -l
+       0
+sofia@MacBookAir Downloads % grep “@ID.*CHI” TD.txt | wc -l
+zsh: no matches found: “@ID.*CHI”
+       0
+sofia@MacBookAir Downloads % grep -o '\bxxx\b' TD.txt | wc -l
+       6
+sofia@MacBookAir Downloads % grep -o 'is' SLI.txt | wc -l
+      83
+sofia@MacBookAir Downloads % Grep -ow 'is' TD.txt | wc -l
+      33
+sofia@MacBookAir Downloads % grep -A2 ‘CHI’ TD.txt
+sofia@MacBookAir Downloads % grep -A2 'CHI'TD.txt
+^C
+sofia@MacBookAir Downloads % grep -A2 '^\*CHI:' TD.txt
+*CHI:	<he wants> [/] she wants to ride [^ elexical] her dolly [^ eu] .
+%mor:	pron|she-Prs-Nom-S3 verb|want-Fin-Ind-Pres-S3 part|to verb|ride-Inf-S pron|her-Prs-Gen-S3 noun|dolly-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|6|NMOD-POSS 6|4|OBJ 7|2|PUNCT
+*CHI:	but <it> [/] she forgot to put her in her desk drawer .
+%mor:	cconj|but pron|she-Prs-Nom-S3 verb|forget-Fin-Ind-Past-S3-Irr part|to verb|put-Inf-S pron|her-Prs-Acc-S3 adp|in pron|her-Prs-Gen-S3 noun|desk noun|drawer .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|OBJ 7|10|CASE 8|10|NMOD-POSS 9|10|COMPOUND 10|5|OBL 11|3|PUNCT
+--
+*CHI:	she's running .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|run-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	he's pointing to go this way and ride <her thing (.) and> [/] that thing .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|point-Part-Pres-S part|to verb|go-Inf-S det|this-Def-Dem-Sing noun|way cconj|and verb|ride-Inf-S det|that-Def-Dem-Sing noun|thing-Acc-Ger .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|7|DET 7|5|OBL-UNMARKED 8|9|CC 9|5|CONJ 10|11|DET 11|9|OBJ 12|3|PUNCT
+--
+*CHI:	<the girl> [/] but the daddy's holding the doll .
+%mor:	cconj|but det|the-Def-Art noun|daddy~part|s verb|hold-Part-Pres-S det|the-Def-Art noun|doll-Acc .
+%gra:	1|5|CC 2|3|DET 3|5|NSUBJ 4|3|CASE 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*CHI:	and she's holding her with his hand [^ eu] .
+%mor:	cconj|and pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|hold-Part-Pres-S pron|her-Prs-Acc-S3 adp|with pron|his-Prs-Gen-S3 noun|hand .
+%gra:	1|4|CC 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|8|CASE 7|8|NMOD-POSS 8|4|OBL 9|4|PUNCT
+--
+*CHI:	the girl's holding her shoes on her hand .
+%mor:	det|the-Def-Art noun|girl~part|s verb|hold-Part-Pres-S pron|her-Prs-Gen-S3 noun|shoe-Plur-Acc adp|on pron|her-Prs-Gen-S3 noun|hand .
+%gra:	1|2|DET 2|4|NSUBJ 3|2|CASE 4|0|ROOT 5|6|NMOD-POSS 6|4|OBJ 7|9|CASE 8|9|NMOD-POSS 9|4|OBL 10|4|PUNCT
+*CHI:	and <&~th> [/] they're wearing their shoes on their foot [^ ew:feet] [^ emorph] [^ eu] .
+%mor:	cconj|and pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|wear-Part-Pres-S pron|their-Prs-Gen-P3 noun|shoe-Plur-Acc adp|on pron|their-Prs-Gen-P3 noun|foot .
+%gra:	1|4|CC 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|NMOD-POSS 6|4|OBJ 7|9|CASE 8|9|NMOD-POSS 9|4|OBL 10|4|PUNCT
+--
+*CHI:	the daddy's getting ready for something .
+%mor:	det|the-Def-Art noun|daddy~aux|be-Fin-Ind-Pres-S3 verb|get-Part-Pres-S adj|ready-S1 adp|for pron|something-Ind-S1 .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|XCOMP 6|7|CASE 7|5|OBL 8|4|PUNCT
+*CHI:	<and the girl was> [/] and the boy is getting ready too .
+%mor:	cconj|and det|the-Def-Art noun|boy aux|be-Fin-Ind-Pres-S3 verb|get-Part-Pres-S adj|ready-S1 adv|too .
+%gra:	1|5|CC 2|3|DET 3|5|NSUBJ 4|5|AUX 5|0|ROOT 6|5|XCOMP 7|5|ADVMOD 8|5|PUNCT
+--
+*CHI:	the dog is holding a shoe so he can [^ modal] go too .
+%mor:	det|the-Def-Art noun|dog aux|be-Fin-Ind-Pres-S3 verb|hold-Part-Pres-S det|a-Ind-Art noun|shoe-Acc sconj|so pron|he-Prs-Nom-S3 aux|can-Fin-S verb|go-Inf-S adv|too .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|10|MARK 8|10|NSUBJ 9|10|AUX 10|4|ADVCL 11|10|ADVMOD 12|4|PUNCT
+--
+*CHI:	the daddy is looking <in the> [/] in [/] <in the> [/] in .
+%mor:	det|the-Def-Art noun|daddy aux|be-Fin-Ind-Pres-S3 verb|look-Part-Pres-S adp|in .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|ADVMOD 6|4|PUNCT
+*CHI:	I don't know what that word is xxx +...
+%mor:	pron|I-Prs-Nom-S1 aux|do-Fin-Ind-Pres-S1~part|not verb|know-Inf-S pron|what-Int-S1 det|that-Def-Dem-Sing noun|word aux|be-Fin-Ind-Pres-S3 +...
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|OBJ 6|7|DET 7|5|NSUBJ 8|5|ACL-RELCL 9|4|PUNCT
+--
+*CHI:	the girl is standing in love with her dress [^ other] [^ eu] .
+%mor:	det|the-Def-Art noun|girl aux|be-Fin-Ind-Pres-S3 verb|stand-Part-Pres-S adp|in noun|love adp|with pron|her-Prs-Gen-S3 noun|dress .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|CASE 6|4|OBL 7|9|CASE 8|9|NMOD-POSS 9|4|OBL 10|4|PUNCT
+--
+*CHI:	the boy got some dirt <and mud> [/] and &~uh some water and mud .
+%mor:	det|the-Def-Art noun|boy verb|get-Fin-Ind-Past-S3-Irr det|some-Def-Ind noun|dirt-Acc cconj|and det|some-Def-Ind noun|water cconj|and noun|mud .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|8|CC 7|8|DET 8|5|CONJ 9|10|CC 10|8|CONJ 11|3|PUNCT
+*CHI:	<and &~uh &~uh> [/] and that's not good .
+%mor:	cconj|and pron|that-Dem~aux|be-Fin-Ind-Pres-S3 part|not adj|good-S1 .
+%gra:	1|5|CC 2|5|NSUBJ 3|5|COP 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+--
+*CHI:	the boy's carrying it .
+%mor:	det|the-Def-Art noun|boy~aux|be-Fin-Ind-Pres-S3 verb|carry-Part-Pres-S pron|it-Prs-Acc-S3 .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+--
+*CHI:	he's gonna [^ cat] carry the bucket .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|carry-Inf-S det|the-Def-Art noun|bucket-Acc .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*CHI:	<and> [/] but [^ econj] the dog splashed the girl [^ eu] .
+%mor:	cconj|but det|the-Def-Art noun|dog verb|splash-Fin-Ind-Past-S3 det|the-Def-Art noun|girl-Acc .
+%gra:	1|4|CC 2|3|DET 3|4|NSUBJ 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+--
+*CHI:	the boy , <he> [/] he was making something with water and mud .
+%mor:	det|the-Def-Art noun|boy cm|cm pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-Irr verb|make-Part-Pres-S pron|something-Ind-S1 adp|with noun|water cconj|and noun|mud .
+%gra:	1|2|DET 2|6|VOCATIVE 3|2|PUNCT 4|6|NSUBJ 5|6|AUX 6|0|ROOT 7|6|OBJ 8|9|CASE 9|7|NMOD 10|11|CC 11|9|CONJ 12|6|PUNCT
+*CHI:	but the girl dropped her thing .
+%mor:	cconj|but det|the-Def-Art noun|girl verb|drop-Fin-Ind-Past-S3 pron|her-Prs-Gen-S3 noun|thing-Acc-Ger .
+%gra:	1|4|CC 2|3|DET 3|4|NSUBJ 4|0|ROOT 5|6|NMOD-POSS 6|4|OBJ 7|4|PUNCT
+*CHI:	<and> [/] and <the &~g> [/] the other girl was playing .
+%mor:	cconj|and det|the-Def-Art adj|other-S1 noun|girl aux|be-Fin-Ind-Past-S3-Irr verb|play-Part-Pres-S .
+%gra:	1|6|CC 2|4|DET 3|4|AMOD 4|6|NSUBJ 5|6|AUX 6|0|ROOT 7|6|PUNCT
+--
+*CHI:	he [^ ew:she] [^ epronoun] tripped on the feet and the leg [^ eu] .
+%mor:	pron|he-Prs-Nom-S3 verb|trip-Fin-Ind-Past-S3 adp|on det|the-Def-Art noun|foot-Plur cconj|and det|the-Def-Art noun|leg .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|CASE 4|5|DET 5|2|OBL 6|8|CC 7|8|DET 8|5|CONJ 9|2|PUNCT
+--
+*CHI:	<he> [/] he's mad [% “he” referring to the boy who the girl tripped over] .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adj|mad-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	the bread falled [^ ew:fell] [^ ev] [^ eu] .
+%mor:	det|the-Def-Art noun|bread verb|fall-Fin-Ind-Past-S3 .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	the girl is raking the leaf pile .
+%mor:	det|the-Def-Art noun|girl aux|be-Fin-Ind-Pres-S3 verb|rake-Part-Pres-S det|the-Def-Art noun|leaf noun|pile-Acc .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|7|DET 6|7|COMPOUND 7|4|OBJ 8|4|PUNCT
+--
+*CHI:	the girl is xxx the leaf pile .
+%mor:	det|the-Def-Art noun|girl aux|be-Fin-Ind-Pres-S3 det|the-Def-Art noun|leaf noun|pile .
+%gra:	1|2|DET 2|6|NSUBJ 3|6|COP 4|6|DET 5|6|COMPOUND 6|0|ROOT 7|6|PUNCT
+*CHI:	and the other girl is trying to clean xxx +/.
+%mor:	cconj|and det|the-Def-Art adj|other-S1 noun|girl aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|clean-Inf-S +/.
+%gra:	1|6|CC 2|4|DET 3|4|AMOD 4|6|NSUBJ 5|6|AUX 6|0|ROOT 7|8|MARK 8|6|XCOMP 9|6|PUNCT
+--
+*CHI:	the girl is trying to clean it up .
+%mor:	det|the-Def-Art noun|girl aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|clean-Inf-S pron|it-Prs-Acc-S3 adp|up .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|6|OBJ 8|6|COMPOUND-PRT 9|4|PUNCT
+*CHI:	the girl is trying to clean it up [^ ns] .
+%mor:	det|the-Def-Art noun|girl aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|clean-Inf-S pron|it-Prs-Acc-S3 adp|up .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|6|OBJ 8|6|COMPOUND-PRT 9|4|PUNCT
+--
+*CHI:	the little boy is raking [^ earg] [^ eu] .
+%mor:	det|the-Def-Art adj|little-S1 noun|boy aux|be-Fin-Ind-Pres-S3 verb|rake-Part-Pres-S .
+%gra:	1|3|DET 2|3|AMOD 3|5|NSUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*CHI:	and the daddy's raking [^ earg] [^ eu] .
+%mor:	cconj|and det|the-Def-Art noun|daddy~aux|be-Fin-Ind-Pres-S3 verb|raking-Part-Pres-S .
+%gra:	1|5|CC 2|3|DET 3|5|NSUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*CHI:	mother's raking [^ earg] [^ eu] .
+%mor:	noun|mother~aux|be-Fin-Ind-Pres-S3 verb|raking-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	the doggy <&~I &~I> [/] is right there .
+%mor:	det|the-Def-Art noun|doggy aux|be-Fin-Ind-Pres-S3 adj|right-S1 adv|there .
+%gra:	1|2|DET 2|5|NSUBJ 3|5|COP 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+--
+*CHI:	the cake has black on it .
+%mor:	det|the-Def-Art noun|cake verb|have-Fin-Ind-Pres-S3 adj|black-S1 adp|on pron|it-Prs-Acc-S3 .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|6|CASE 6|3|OBL 7|3|PUNCT
+*CHI:	but it wasn't sposta .
+%mor:	cconj|but pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-Irr~part|not adj|sposta-S1 .
+%gra:	1|5|CC 2|5|NSUBJ 3|5|COP 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+--
+*CHI:	the dog made all this black .
+%mor:	det|the-Def-Art noun|dog verb|make-Fin-Ind-Past-S3-Irr det|all-Def-Tot det|this-Def-Dem-Sing noun|black-Acc .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|6|DET-PREDET 5|6|DET 6|3|OBJ 7|3|PUNCT
+--
+*CHI:	the cake is all dirty .
+%mor:	det|the-Def-Art noun|cake aux|be-Fin-Ind-Pres-S3 adv|all adj|dirty-S1 .
+%gra:	1|2|DET 2|5|NSUBJ 3|5|COP 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+*CHI:	they hafta make another one .
+%mor:	pron|they-Prs-Nom-P3 aux|hafta-Fin-Ind-Pres-P3 verb|make-Inf-S det|another-Def-Ind noun|one-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+--
+*CHI:	she's gonna [^ cat] &~uh wipe it all up .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adv|gonna verb|wipe-Inf-S pron|it-Prs-Acc-S3 det|all-Def-Tot adp|up .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|OBJ 6|7|DET 7|4|COMPOUND-PRT 8|4|PUNCT
+*CHI:	she's gonna wipe it .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|wipe-Inf-S pron|it-Prs-Acc-S3 .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|MARK 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+--
+*CHI:	the girl's pushing the cart .
+%mor:	det|the-Def-Art noun|girl~part|s verb|push-Part-Pres-S det|the-Def-Art noun|cart-Acc .
+%gra:	1|2|DET 2|4|NSUBJ 3|2|CASE 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*CHI:	the daddy's pushing the cart .
+%mor:	det|the-Def-Art noun|daddy~aux|be-Fin-Ind-Pres-S3 verb|push-Part-Pres-S det|the-Def-Art noun|cart-Acc .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+--
+*CHI:	she's trying to get oranges .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|get-Inf-S noun|orange-Plur-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|OBJ 7|3|PUNCT
+--
+*CHI:	the boy's trying to get (.) some .
+%mor:	det|the-Def-Art noun|boy~aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|get-Inf-S det|some-Def-Ind .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|6|OBJ 8|4|PUNCT
+*CHI:	<what's that> [/] what's that +...
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|that-Dem +...
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	they will [^ modal] fall .
+%mor:	pron|they-Prs-Nom-P3 aux|will-Fin-S verb|fall-Inf-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	<the the mommy> [/] that [^ ew:those] [^ emorph] people was [^ ew:were] [^ ev] getting some red things [^ eu] .
+%mor:	sconj|that noun|person-Plur aux|be-Fin-Ind-Past-S3-Irr verb|get-Part-Pres-S det|some-Def-Ind adj|red-S1 noun|thing-Plur-Acc .
+%gra:	1|4|MARK 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|7|DET 6|7|AMOD 7|4|OBJ 8|4|PUNCT
+--
+*CHI:	the mommy spilled it .
+%mor:	det|the-Def-Art noun|mommy verb|spill-Fin-Ind-Past-S3 pron|it-Prs-Acc-S3 .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	he's <&~g> [/] trying to get a cookie .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|get-Inf-S det|a-Ind-Art noun|cookie-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|7|DET 7|5|OBJ 8|3|PUNCT
+*CHI:	<but> [/] he's falling .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|fall-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	he's trying to get a cookie [^ ns] .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|get-Inf-S det|a-Ind-Art noun|cookie-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|7|DET 7|5|OBJ 8|3|PUNCT
+*CHI:	but he's too short to .
+%mor:	cconj|but pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adv|too adj|short-S1 part|to .
+%gra:	1|5|CC 2|5|NSUBJ 3|5|COP 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT 7|5|PUNCT
+*CHI:	she hadta get hers .
+%mor:	pron|she-Prs-Nom-S3 aux|hadt-Fin-Ind-Pres-S3 verb|get-Inf-S pron|her-Prs-S3 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+--
+*CHI:	she's washing the plate .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|wash-Part-Pres-S det|the-Def-Art noun|plate-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+--
+*CHI:	<the plate> [/] that plate 0is [^ ev] already washed [^ eu] .
+%mor:	det|that-Def-Dem-Sing noun|plate adv|already verb|wash-Fin-Ind-Past-S3 .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+--
+*CHI:	the plate 0is already washed [^ ns] .
+%mor:	det|the-Def-Art noun|plate adv|already verb|wash-Fin-Ind-Past-S3 .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+--
+*CHI:	<&~h> [/] he's trying to pour something on him .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|pour-Inf-S pron|something-Ind-S1 adp|on pron|he-Prs-Acc-S3 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|OBJ 7|8|CASE 8|5|OBL 9|3|PUNCT
+*CHI:	he's mad .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adj|mad-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	the mommy , she stand [* m:03s] [^ ev] like this [^ eu] .
+%mor:	det|the-Def-Art noun|mommy cm|cm pron|she-Prs-Nom-S3 verb|stand-Fin-Ind-Pres-S adp|like pron|this-Dem-S1 .
+%gra:	1|2|DET 2|5|DISLOCATED 3|2|PUNCT 4|5|NSUBJ 5|0|ROOT 6|7|CASE 7|5|OBL 8|5|PUNCT
+--
+*CHI:	the wagon's down there .
+%mor:	det|the-Def-Art noun|wagon~part|s adv|down adv|there .
+%gra:	1|2|DET 2|5|NSUBJ 3|2|CASE 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+*CHI:	she's gonna <skip> [/] (.) trip .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|trip-Inf-S .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+--
+*CHI:	&~um the buckets and the shovel and the other shovel's [^ ew:are] [^ ev] down there [^ eu] .
+%mor:	det|the-Def-Art noun|bucket-Plur cconj|and det|the-Def-Art noun|shovel cconj|and det|the-Def-Art adj|other-S1 noun|shovel~aux|be-Fin-Ind-Pres-S3 adv|down adv|there .
+%gra:	1|2|DET 2|0|ROOT 3|5|CC 4|5|DET 5|2|CONJ 6|9|CC 7|9|DET 8|9|AMOD 9|2|CONJ 10|12|COP 11|12|ADVMOD 12|2|CONJ 13|2|PUNCT
+--
+*CHI:	the bus is there .
+%mor:	det|the-Def-Art noun|bus aux|be-Fin-Ind-Pres-S3 adv|there .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+*CHI:	but [^ emorph] they're mad at her [^ eu] .
+%mor:	cconj|but pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 adj|mad-S1 adp|at pron|her-Prs-Acc-S3 .
+%gra:	1|4|CC 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|6|CASE 6|4|OBL 7|4|PUNCT
+--
+*CHI:	the dog's in the road .
+%mor:	det|the-Def-Art noun|dog~part|s adp|in det|the-Def-Art noun|road .
+%gra:	1|2|DET 2|6|NSUBJ 3|2|CASE 4|6|CASE 5|6|DET 6|0|ROOT 7|6|PUNCT
+*CHI:	he's trying to drive .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|drive-Inf-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|3|PUNCT
+*CHI:	the bus is driving .
+%mor:	det|the-Def-Art noun|bus aux|be-Fin-Ind-Pres-S3 verb|drive-Part-Pres-S .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+--
+*CHI:	they're pulling him and giving [^ ew:taking] [^ elexical] him for 0a [^ emorph] walk [^ eu] .
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|pull-Part-Pres-S pron|he-Prs-Acc-S3 cconj|and verb|give-Part-Pres-S pron|he-Prs-Acc-S3 adp|for noun|walk .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|6|CC 6|3|CONJ 7|6|IOBJ 8|9|CASE 9|6|OBL 10|3|PUNCT
+--
+*CHI:	these lights are flashing .
+%mor:	det|this-Def-Dem-Plur noun|light-Plur aux|be-Fin-Ind-Pres-P3 verb|flash-Part-Pres-S .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+--
+*CHI:	&~um the cat needs help .
+%mor:	det|the-Def-Art noun|cat verb|need-Fin-Ind-Pres-S3 noun|help-Acc .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+--
+*CHI:	they're calling him .
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|call-Part-Pres-S pron|he-Prs-Acc-S3 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	he's standing and watching him <and> [/] and see [* m:0ing] [^ emorph] if he's falling [^ eu] .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|stand-Part-Pres-S cconj|and verb|watch-Part-Pres-S pron|he-Prs-Acc-S3 cconj|and verb|see-Inf-S sconj|if pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|fall-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|CC 5|3|CONJ 6|5|OBJ 7|8|CC 8|3|CONJ 9|12|MARK 10|12|NSUBJ 11|12|AUX 12|8|CCOMP 13|3|PUNCT
+--
+*CHI:	he's falling .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|fall-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	&~uh the branch is falling .
+%mor:	det|the-Def-Art noun|branch aux|be-Fin-Ind-Pres-S3 verb|fall-Part-Pres-S .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+--
+*CHI:	they're trying to iceskate in the snow &=laughs .
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|try-Part-Pres-S part|to verb|iceskate-Inf-S adp|in det|the-Def-Art noun|snow .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|8|CASE 7|8|DET 8|5|OBL 9|3|PUNCT
+*CHI:	and xxx .
+%mor:	cconj|and .
+%gra:	1|0|ROOT 2|1|PUNCT
+--
+*CHI:	<&~uh they're &~p> [/] they're making a snowman .
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|make-Part-Pres-S det|a-Ind-Art noun|snowman-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+--
+*CHI:	the daddy's shoveling .
+%mor:	det|the-Def-Art noun|daddy~aux|be-Fin-Ind-Pres-S3 verb|shoveling-Part-Pres-S .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*CHI:	he's shoveling .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|shovel-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	he's throwing snowballs .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|throw-Part-Pres-S noun|snowball-Plur-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	he was throwing an oval one .
+%mor:	pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-Irr verb|throw-Part-Pres-S det|a-Ind-Art noun|oval noun|one-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|DET 5|6|COMPOUND 6|3|OBJ 7|3|PUNCT
+*CHI:	he was throwing a circle [^ ew:round] [^ elexical] one [^ eu] .
+%mor:	pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-Irr verb|throw-Part-Pres-S det|a-Ind-Art noun|circle-Acc num|one .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|OBL-UNMARKED 7|3|PUNCT
+*CHI:	I'm done [^ ns] .
+%mor:	pron|I-Prs-Nom-S1~aux|be-Fin-Ind-Pres-S1 adj|done-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	he's toasting some bread .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|toast-Part-Pres-S det|some-Def-Ind noun|bread-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+--
+*CHI:	she's ready to go night_night .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adj|ready-S1 part|to verb|go-Inf-S adv|nightnight .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|ADVMOD 7|3|PUNCT
+--
+*CHI:	she looks tired .
+%mor:	pron|she-Prs-Nom-S3 verb|look-Fin-Ind-Pres-S3 adj|tired-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|XCOMP 4|2|PUNCT
+--
+*CHI:	&~uh she spilled [^ ew:poured] [^ elexical] the milk into something else [^ eu] .
+%mor:	pron|she-Prs-Nom-S3 verb|spill-Fin-Ind-Past-S3 det|the-Def-Art noun|milk-Acc adp|into pron|something-Ind-S1 adj|else-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|6|CASE 6|2|OBL 7|6|ADVMOD 8|2|PUNCT
+--
+*CHI:	that person and that person and that person 0are [^ ev] crawling [^ eu] .
+%mor:	det|that-Def-Dem-Sing noun|person cconj|and det|that-Def-Dem-Sing noun|person cconj|and det|that-Def-Dem-Sing noun|person verb|crawl-Ger-S .
+%gra:	1|2|DET 2|0|ROOT 3|5|CC 4|5|DET 5|2|CONJ 6|8|CC 7|8|DET 8|9|COMPOUND 9|2|CONJ 10|2|PUNCT
+*CHI:	she's sitting .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|sit-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*CHI:	the dog will wants [^ ev] to play [^ eu] .
+%mor:	det|the-Def-Art noun|dog aux|will-Fin-S verb|want-Fin-Ind-Pres-S3 part|to verb|play-Inf-S .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|4|PUNCT
+*CHI:	but he didn't .
+%mor:	cconj|but pron|he-Prs-Nom-S3 aux|do-Fin-Ind-Past-S3-Irr~part|not .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+--
+*CHI:	the grandma's sitting in the chair .
+%mor:	det|the-Def-Art noun|grandma~aux|be-Fin-Ind-Pres-S3 verb|sitting-Part-Pres-S adp|in det|the-Def-Art noun|chair .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|7|CASE 6|7|DET 7|4|NMOD 8|4|PUNCT
+--
+*CHI:	he's saying ssh .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|say-Part-Pres-S noun|ssh-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	<he> [/] he's being quiet .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 aux|be-Part-Pres-S adj|quiet-S1 .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|COP 4|0|ROOT 5|4|PUNCT
+*CHI:	he's saying ssh [^ ns] .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|say-Part-Pres-S noun|ssh-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	and <she xxx> [>] xxx +/.
+%mor:	cconj|and pron|she-Prs-Nom-S3 +/.
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+--
+*CHI:	she has different scissors in her hand .
+%mor:	pron|she-Prs-Nom-S3 verb|have-Fin-Ind-Pres-S3 adj|different-S1 noun|scissors-Plur-Acc adp|in pron|her-Prs-Gen-S3 noun|hand .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|AMOD 4|2|OBJ 5|7|CASE 6|7|NMOD-POSS 7|2|OBL 8|2|PUNCT
+--
+*CHI:	they're going in the car .
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|go-Part-Pres-S adp|in det|the-Def-Art noun|car .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+--
+*CHI:	there's a bag .
+%mor:	pron|there-Int-S1~verb|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|bag .
+%gra:	1|2|EXPL 2|0|ROOT 3|4|DET 4|2|NSUBJ 5|2|PUNCT
+--
+*CHI:	the girl is sitting in the back .
+%mor:	det|the-Def-Art noun|girl aux|be-Fin-Ind-Pres-S3 verb|sit-Part-Pres-S adp|in det|the-Def-Art noun|back .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|4|PUNCT
+--
+*CHI:	they're sharing the cake .
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|share-Part-Pres-S det|the-Def-Art noun|cake-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+sofia@MacBookAir Downloads % grep '^\*CHI:' TD.txt > chi_TD.txt
+sofia@MacBookAir Downloads % ls chi_TD.txt
+chi_TD.txt
+sofia@MacBookAir Downloads % grep '^%mor:' TD.txt
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	pron|she-Prs-Nom-S3 verb|want-Fin-Ind-Pres-S3 part|to verb|ride-Inf-S pron|her-Prs-Gen-S3 noun|dolly-Acc .
+%mor:	cconj|but pron|she-Prs-Nom-S3 verb|forget-Fin-Ind-Past-S3-Irr part|to verb|put-Inf-S pron|her-Prs-Acc-S3 adp|in pron|her-Prs-Gen-S3 noun|desk noun|drawer .
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|run-Part-Pres-S .
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|happen-Inf-S adv|next ?
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|point-Part-Pres-S part|to verb|go-Inf-S det|this-Def-Dem-Sing noun|way cconj|and verb|ride-Inf-S det|that-Def-Dem-Sing noun|thing-Acc-Ger .
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	adv|just verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 pron|anything-Ind-S1 adj|else-S1 adp|about det|the-Def-Art noun|picture .
+%mor:	cconj|but det|the-Def-Art noun|daddy~part|s verb|hold-Part-Pres-S det|the-Def-Art noun|doll-Acc .
+%mor:	cconj|and pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|hold-Part-Pres-S pron|her-Prs-Acc-S3 adp|with pron|his-Prs-Gen-S3 noun|hand .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	det|the-Def-Art noun|girl~part|s verb|hold-Part-Pres-S pron|her-Prs-Gen-S3 noun|shoe-Plur-Acc adp|on pron|her-Prs-Gen-S3 noun|hand .
+%mor:	cconj|and pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|wear-Part-Pres-S pron|their-Prs-Gen-P3 noun|shoe-Plur-Acc adp|on pron|their-Prs-Gen-P3 noun|foot .
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	det|the-Def-Art noun|daddy~aux|be-Fin-Ind-Pres-S3 verb|get-Part-Pres-S adj|ready-S1 adp|for pron|something-Ind-S1 .
+%mor:	cconj|and det|the-Def-Art noun|boy aux|be-Fin-Ind-Pres-S3 verb|get-Part-Pres-S adj|ready-S1 adv|too .
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 part|go verb|happen-Inf-S adv|next ?
+%mor:	det|the-Def-Art noun|dog aux|be-Fin-Ind-Pres-S3 verb|hold-Part-Pres-S det|a-Ind-Art noun|shoe-Acc sconj|so pron|he-Prs-Nom-S3 aux|can-Fin-S verb|go-Inf-S adv|too .
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	det|the-Def-Art noun|daddy aux|be-Fin-Ind-Pres-S3 verb|look-Part-Pres-S adp|in .
+%mor:	pron|I-Prs-Nom-S1 aux|do-Fin-Ind-Pres-S1~part|not verb|know-Inf-S pron|what-Int-S1 det|that-Def-Dem-Sing noun|word aux|be-Fin-Ind-Pres-S3 +...
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	det|the-Def-Art noun|girl aux|be-Fin-Ind-Pres-S3 verb|stand-Part-Pres-S adp|in noun|love adp|with pron|her-Prs-Gen-S3 noun|dress .
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	det|the-Def-Art noun|boy verb|get-Fin-Ind-Past-S3-Irr det|some-Def-Ind noun|dirt-Acc cconj|and det|some-Def-Ind noun|water cconj|and noun|mud .
+%mor:	cconj|and pron|that-Dem~aux|be-Fin-Ind-Pres-S3 part|not adj|good-S1 .
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 part|go verb|happen-Inf-S adv|next ?
+%mor:	det|the-Def-Art noun|boy~aux|be-Fin-Ind-Pres-S3 verb|carry-Part-Pres-S pron|it-Prs-Acc-S3 .
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|carry-Inf-S det|the-Def-Art noun|bucket-Acc .
+%mor:	cconj|but det|the-Def-Art noun|dog verb|splash-Fin-Ind-Past-S3 det|the-Def-Art noun|girl-Acc .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	det|the-Def-Art noun|boy cm|cm pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-Irr verb|make-Part-Pres-S pron|something-Ind-S1 adp|with noun|water cconj|and noun|mud .
+%mor:	cconj|but det|the-Def-Art noun|girl verb|drop-Fin-Ind-Past-S3 pron|her-Prs-Gen-S3 noun|thing-Acc-Ger .
+%mor:	cconj|and det|the-Def-Art adj|other-S1 noun|girl aux|be-Fin-Ind-Past-S3-Irr verb|play-Part-Pres-S .
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	pron|he-Prs-Nom-S3 verb|trip-Fin-Ind-Past-S3 adp|on det|the-Def-Art noun|foot-Plur cconj|and det|the-Def-Art noun|leg .
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|happen-Inf-S adv|next ?
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adj|mad-S1 .
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	det|the-Def-Art noun|bread verb|fall-Fin-Ind-Past-S3 .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	det|the-Def-Art noun|girl aux|be-Fin-Ind-Pres-S3 verb|rake-Part-Pres-S det|the-Def-Art noun|leaf noun|pile-Acc .
+%mor:	aux|can-Fin-S pron|you-Prs-Nom-S2 verb|say-Inf-S pron|that-Dem adv|again ?
+%mor:	det|the-Def-Art noun|girl aux|be-Fin-Ind-Pres-S3 det|the-Def-Art noun|leaf noun|pile .
+%mor:	cconj|and det|the-Def-Art adj|other-S1 noun|girl aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|clean-Inf-S +/.
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	det|the-Def-Art noun|girl aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|clean-Inf-S pron|it-Prs-Acc-S3 adp|up .
+%mor:	det|the-Def-Art noun|girl aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|clean-Inf-S pron|it-Prs-Acc-S3 adp|up .
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 part|go verb|happen-Inf-S adv|next ?
+%mor:	det|the-Def-Art adj|little-S1 noun|boy aux|be-Fin-Ind-Pres-S3 verb|rake-Part-Pres-S .
+%mor:	cconj|and det|the-Def-Art noun|daddy~aux|be-Fin-Ind-Pres-S3 verb|raking-Part-Pres-S .
+%mor:	noun|mother~aux|be-Fin-Ind-Pres-S3 verb|raking-Part-Pres-S .
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	det|the-Def-Art noun|doggy aux|be-Fin-Ind-Pres-S3 adj|right-S1 adv|there .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	det|the-Def-Art noun|cake verb|have-Fin-Ind-Pres-S3 adj|black-S1 adp|on pron|it-Prs-Acc-S3 .
+%mor:	cconj|but pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-Irr~part|not adj|sposta-S1 .
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	det|the-Def-Art noun|dog verb|make-Fin-Ind-Past-S3-Irr det|all-Def-Tot det|this-Def-Dem-Sing noun|black-Acc .
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 part|go verb|happen-Inf-S adv|next ?
+%mor:	det|the-Def-Art noun|cake aux|be-Fin-Ind-Pres-S3 adv|all adj|dirty-S1 .
+%mor:	pron|they-Prs-Nom-P3 aux|hafta-Fin-Ind-Pres-P3 verb|make-Inf-S det|another-Def-Ind noun|one-Acc .
+%mor:	cconj|and verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adv|gonna verb|wipe-Inf-S pron|it-Prs-Acc-S3 det|all-Def-Tot adp|up .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|wipe-Inf-S pron|it-Prs-Acc-S3 .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	det|the-Def-Art noun|girl~part|s verb|push-Part-Pres-S det|the-Def-Art noun|cart-Acc .
+%mor:	det|the-Def-Art noun|daddy~aux|be-Fin-Ind-Pres-S3 verb|push-Part-Pres-S det|the-Def-Art noun|cart-Acc .
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|get-Inf-S noun|orange-Plur-Acc .
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|happen-Inf-S adv|next ?
+%mor:	det|the-Def-Art noun|boy~aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|get-Inf-S det|some-Def-Ind .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|that-Dem +...
+%mor:	det|the-Def-Art noun|boy verb|knock-Fin-Ind-Past-S3 adp|down det|the-Def-Art noun|box-Plur-Acc adp|off det|the-Def-Art noun|shelf .
+%mor:	cconj|and adv|then pron|what-Int-S1 aux|will-Fin-S verb|happen-Inf-S adp|in adv|just det|a-Ind-Art adj|little-S1 noun|while ?
+%mor:	pron|they-Prs-Nom-P3 aux|will-Fin-S verb|fall-Inf-S .
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	sconj|that noun|person-Plur aux|be-Fin-Ind-Past-S3-Irr verb|get-Part-Pres-S det|some-Def-Ind adj|red-S1 noun|thing-Plur-Acc .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	det|the-Def-Art noun|mommy verb|spill-Fin-Ind-Past-S3 pron|it-Prs-Acc-S3 .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|get-Inf-S det|a-Ind-Art noun|cookie-Acc .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|fall-Part-Pres-S .
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|get-Inf-S det|a-Ind-Art noun|cookie-Acc .
+%mor:	cconj|but pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adv|too adj|short-S1 part|to .
+%mor:	pron|she-Prs-Nom-S3 aux|hadt-Fin-Ind-Pres-S3 verb|get-Inf-S pron|her-Prs-S3 .
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 part|go verb|happen-Inf-S adv|next ?
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|wash-Part-Pres-S det|the-Def-Art noun|plate-Acc .
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	det|that-Def-Dem-Sing noun|plate adv|already verb|wash-Fin-Ind-Past-S3 .
+%mor:	aux|can-Fin-S pron|you-Prs-Nom-S2 verb|tell-Inf-S pron|I-Prs-Acc-S1 pron|that-Dem adv|again ?
+%mor:	det|the-Def-Art noun|plate adv|already verb|wash-Fin-Ind-Past-S3 .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|pour-Inf-S pron|something-Ind-S1 adp|on pron|he-Prs-Acc-S3 .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adj|mad-S1 .
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	det|the-Def-Art noun|mommy cm|cm pron|she-Prs-Nom-S3 verb|stand-Fin-Ind-Pres-S adp|like pron|this-Dem-S1 .
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 part|go verb|happen-Inf-S adv|next ?
+%mor:	det|the-Def-Art noun|wagon~part|s adv|down adv|there .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|trip-Inf-S .
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	det|the-Def-Art noun|bucket-Plur cconj|and det|the-Def-Art noun|shovel cconj|and det|the-Def-Art adj|other-S1 noun|shovel~aux|be-Fin-Ind-Pres-S3 adv|down adv|there .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	det|the-Def-Art noun|bus aux|be-Fin-Ind-Pres-S3 adv|there .
+%mor:	cconj|but pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 adj|mad-S1 adp|at pron|her-Prs-Acc-S3 .
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	det|the-Def-Art noun|dog~part|s adp|in det|the-Def-Art noun|road .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|drive-Inf-S .
+%mor:	det|the-Def-Art noun|bus aux|be-Fin-Ind-Pres-S3 verb|drive-Part-Pres-S .
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|happen-Inf-S adv|next ?
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|pull-Part-Pres-S pron|he-Prs-Acc-S3 cconj|and verb|give-Part-Pres-S pron|he-Prs-Acc-S3 adp|for noun|walk .
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	det|this-Def-Dem-Plur noun|light-Plur aux|be-Fin-Ind-Pres-P3 verb|flash-Part-Pres-S .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	det|the-Def-Art noun|cat verb|need-Fin-Ind-Pres-S3 noun|help-Acc .
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|call-Part-Pres-S pron|he-Prs-Acc-S3 .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|stand-Part-Pres-S cconj|and verb|watch-Part-Pres-S pron|he-Prs-Acc-S3 cconj|and verb|see-Inf-S sconj|if pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|fall-Part-Pres-S .
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|happen-Inf-S adv|next ?
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|fall-Part-Pres-S .
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	det|the-Def-Art noun|branch aux|be-Fin-Ind-Pres-S3 verb|fall-Part-Pres-S .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|try-Part-Pres-S part|to verb|iceskate-Inf-S adp|in det|the-Def-Art noun|snow .
+%mor:	cconj|and .
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|make-Part-Pres-S det|a-Ind-Art noun|snowman-Acc .
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|happen-Inf-S adv|next ?
+%mor:	det|the-Def-Art noun|daddy~aux|be-Fin-Ind-Pres-S3 verb|shoveling-Part-Pres-S .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|shovel-Part-Pres-S .
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|throw-Part-Pres-S noun|snowball-Plur-Acc .
+%mor:	pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-Irr verb|throw-Part-Pres-S det|a-Ind-Art noun|oval noun|one-Acc .
+%mor:	pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-Irr verb|throw-Part-Pres-S det|a-Ind-Art noun|circle-Acc num|one .
+%mor:	pron|I-Prs-Nom-S1~aux|be-Fin-Ind-Pres-S1 adj|done-S1 .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|toast-Part-Pres-S det|some-Def-Ind noun|bread-Acc .
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adj|ready-S1 part|to verb|go-Inf-S adv|nightnight .
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 part|go verb|happen-Inf-S adv|next ?
+%mor:	pron|she-Prs-Nom-S3 verb|look-Fin-Ind-Pres-S3 adj|tired-S1 .
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	pron|she-Prs-Nom-S3 verb|spill-Fin-Ind-Past-S3 det|the-Def-Art noun|milk-Acc adp|into pron|something-Ind-S1 adj|else-S1 .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	det|that-Def-Dem-Sing noun|person cconj|and det|that-Def-Dem-Sing noun|person cconj|and det|that-Def-Dem-Sing noun|person verb|crawl-Ger-S .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|sit-Part-Pres-S .
+%mor:	det|the-Def-Art noun|dog aux|will-Fin-S verb|want-Fin-Ind-Pres-S3 part|to verb|play-Inf-S .
+%mor:	cconj|but pron|he-Prs-Nom-S3 aux|do-Fin-Ind-Past-S3-Irr~part|not .
+%mor:	intj|okay cm|cm pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	det|the-Def-Art noun|grandma~aux|be-Fin-Ind-Pres-S3 verb|sitting-Part-Pres-S adp|in det|the-Def-Art noun|chair .
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|happen-Inf-S adv|next ?
+%mor:	det|the-Def-Art noun|boy aux|be-Fin-Ind-Pres-S3 verb|take-Part-Pres-S pron|his-Prs-Gen-S3 noun|grandma~part|s noun|scissors-Plur-Acc .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 part|go verb|happen-Inf-S adp|in adv|just det|a-Ind-Art adj|little-S1 noun|while ?
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|say-Part-Pres-S noun|ssh-Acc .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 aux|be-Part-Pres-S adj|quiet-S1 .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|say-Part-Pres-S noun|ssh-Acc .
+%mor:	cconj|and pron|she-Prs-Nom-S3 +/.
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	pron|she-Prs-Nom-S3 verb|have-Fin-Ind-Pres-S3 adj|different-S1 noun|scissors-Plur-Acc adp|in pron|her-Prs-Gen-S3 noun|hand .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|go-Part-Pres-S adp|in det|the-Def-Art noun|car .
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	pron|there-Int-S1~verb|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|bag .
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|happen-Inf-S adv|next ?
+%mor:	det|the-Def-Art noun|girl aux|be-Fin-Ind-Pres-S3 verb|sit-Part-Pres-S adp|in det|the-Def-Art noun|back .
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|share-Part-Pres-S det|the-Def-Art noun|cake-Acc .
+sofia@MacBookAir Downloads % grep '^%mor:' TD.txt | grep -oE 'verb\|[^[:space:]]+' | wc -l 
+     178
+sofia@MacBookAir Downloads % script lab4_session.txt
+Script started, output file is lab4_session.txt
+sofia@MacBookAir Downloads % grep -c '^@G:' SLI.txt
+15
+sofia@MacBookAir Downloads % grep -c '^\*CHI:' SLI.txt
+68
+sofia@MacBookAir Downloads % grep -c '^\*INV:' SLI.txt
+106
+sofia@MacBookAir Downloads % grep -F '[* m:' SLI.txt
+
+*CHI:	they take their hat [* m:0s] [^ emorph] off [^ eu] .
+*CHI:	she want [* m:03s] [^ ev] the bucket [^ eu] .
+*CHI:	she want [* m:03s] the bucket [^ ns] .
+*CHI:	she want [* m:03s] the bucket [^ ns] .
+sofia@MacBookAir Downloads % grep -oE '\[\* m:[^]]+\]' SLI.txt | sed -E 's/^\[\* m://; s/\]$//'
+0s
+03s
+03s
+03s
+sofia@MacBookAir Downloads % grep -oE '\[\^ [^]]+\]' SLI.txt | sed -E 's/^\[\^ //; s/\]$//' | sort | uniq -c | sort -nr
+  24 eu
+  23 ns
+   8 earg
+   7 ev
+   5 emorph
+   4 epronoun
+   3 ew:she
+   2 other
+   1 frag
+   1 ew:he
+   1 ew:doesn't
+   1 elexical
+sofia@MacBookAir Downloads % grep -oE '\[\^ x [0-9]+\]' SLI.txt
+sofia@MacBookAir Downloads % grep -Fc '[/]' SLI.txt
+3
+sofia@MacBookAir Downloads % grep -Fc '[>]' SLI.txt
+0
+sofia@MacBookAir Downloads % grep -Fc '[<]' SLI.txt
+0
+sofia@MacBookAir Downloads % grep -c '[<]' SLI.txt 
+3
+sofia@MacBookAir Downloads % grep -c '[>]' SLI.txt 
+3
+sofia@MacBookAir Downloads % grep -c '^\.+\.\.\.' SLI.txt
+0
+sofia@MacBookAir Downloads % Grep -c '^\*.*+\/\.' SLI.txt
+0
+sofia@MacBookAir Downloads % grep -E '^\*[A-Z]{3}:' SLI.txt | sed -E 's/\[[^]]*\]//g' | grep -oE '(^|[[:space:]])0[[:alpha:]]+' | grep -oE '0[[:alpha:]]+$'
+
+0a
+0a
+0are
+0is
+0a
+0a
+0a
+0a
+0the
+0a
+0a
+0the
+0a
+sofia@MacBookAir Downloads % grep -o '[a-zA-Z]*\@[on]' SLI.txt
+sofia@MacBookAir Downloads % grep -E '^%(com|act|xov):' SLI.txt
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	pronoun use was consistent for this picture even though the pictures shows 2 boys
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	no response .
+%com:	no response .
+sofia@MacBookAir Downloads % grep '(%com:|%act:|%xov)' SLI.txt
+sofia@MacBookAir Downloads % grep -o '\[% [^]]*\]' SLI.txt
+[% dog splashing water on girl]
+[% possibly referring to the boy]
+sofia@MacBookAir Downloads % grep “@ID.*CHI” SLI.txt | wc -l
+zsh: no matches found: “@ID.*CHI”
+       0
+sofia@MacBookAir Downloads % grep '@ID.*CHI' SLI.txt | wc -l
+       1
+sofia@MacBookAir Downloads % grep -o '\bxxx\b' SLI.txt | wc -l
+       6
+sofia@MacBookAir Downloads % grep -o 'is' SLI.txt | wc -l
+      83
+sofia@MacBookAir Downloads % Grep -ow 'is' SLI.txt | wc -l
+      21
+sofia@MacBookAir Downloads % grep -A2 'CHI' SLI.txt
+@Participants:	INV Investigator, CHI Target_Child
+@ID:	eng|EisenbergGuo|INV|||||Investigator|||
+@ID:	eng|EisenbergGuo|CHI|3;06.|male|||Target_Child|||
+@Comment:	batchalign3 8e6fa18 | morphosyntax: stanza:1.12.2:noretok:native-mwt9 | 2026-09-09T08:49:40Z
+@Comment:	Language = English
+--
+*CHI:	<he found the &~uh> [/] he found the cookies .
+%mor:	pron|he-Prs-Nom-S3 verb|find-Fin-Ind-Past-S3-Irr det|the-Def-Art noun|cookie-Plur-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+--
+*CHI:	he [^ ew:she] [^ epronoun] got wet [^ eu] .
+%mor:	pron|he-Prs-Nom-S3 verb|get-Fin-Ind-Past-S3-Irr adj|wet-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|XCOMP 4|2|PUNCT
+--
+*CHI:	he [^ ew:she] [^ epronoun] got wet on her shoe [^ eu] .
+%mor:	pron|he-Prs-Nom-S3 verb|get-Fin-Ind-Past-S3-Irr adj|wet-S1 adp|on pron|her-Prs-Gen-S3 noun|shoe .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|XCOMP 4|6|CASE 5|6|NMOD-POSS 6|2|OBL 7|2|PUNCT
+*CHI:	xxx shoes .
+%mor:	noun|shoe-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+--
+*CHI:	he [^ ew:she] [^ epronoun] found the shoe in the water [^ eu] .
+%mor:	pron|he-Prs-Nom-S3 verb|find-Fin-Ind-Past-S3-Irr det|the-Def-Art noun|shoe-Acc adp|in det|the-Def-Art noun|water .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|7|CASE 6|7|DET 7|2|OBL 8|2|PUNCT
+--
+*CHI:	he's putting [^ earg] [^ earg] [^ eu] .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|put-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	the rest fall down .
+%mor:	det|the-Def-Art noun|rest verb|fall-Fin-Ind-S adv|down .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+--
+*CHI:	[^ earg] fall down [^ eu] .
+%mor:	verb|fall-Fin-Imp-S adp|down .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+--
+*CHI:	I need 0a tissue [^ ns] .
+%mor:	pron|I-Prs-Nom-S1 verb|need-Fin-Ind-Pres-S1 noun|tissue-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+--
+*CHI:	I need 0a tissue [^ ns] .
+%mor:	pron|I-Prs-Nom-S1 verb|need-Fin-Ind-Pres-S1 noun|tissue-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+--
+*CHI:	they 0are [^ ev] wearing hats [^ eu] .
+%mor:	pron|they-Prs-Nom-P3 verb|wear-Part-Pres-S noun|hat-Plur-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	they take their hat [* m:0s] [^ emorph] off [^ eu] .
+%mor:	pron|they-Prs-Nom-P3 verb|take-Fin-Ind-Pres-P3 pron|their-Prs-Gen-P3 noun|hat-Acc adp|off .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|NMOD-POSS 4|2|OBJ 5|2|COMPOUND-PRT 6|2|PUNCT
+--
+*CHI:	she 0is [^ ev] hurt [^ eu] .
+%mor:	pron|she-Prs-Nom-S3 verb|hurt-Fin-Ind-Past-S3-Irr .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+--
+*CHI:	they hurt me .
+%mor:	pron|they-Prs-Nom-P3 verb|hurt-Fin-Ind-Past-P3-Irr pron|I-Prs-Acc-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+--
+*CHI:	xxx falling down .
+%mor:	verb|fall-Part-Pres-S adp|down .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+--
+*CHI:	the cake to falling [^ other] down [^ eu] .
+%mor:	det|the-Def-Art noun|cake sconj|to verb|fall-Ger-S adp|down .
+%gra:	1|2|DET 2|0|ROOT 3|4|MARK 4|2|ACL 5|4|COMPOUND-PRT 6|2|PUNCT
+--
+*CHI:	it's gonna fall down .
+%mor:	pron|it-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adv|gonna verb|fall-Inf-S adp|down .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|ADVMOD 6|4|PUNCT
+--
+*CHI:	the cake is gonna get a big mess [^ eu] .
+%mor:	det|the-Def-Art noun|cake aux|be-Fin-Ind-Pres-S3 adv|gonna verb|get-Inf-S det|a-Ind-Art adj|big-S1 noun|mess-Acc .
+%gra:	1|2|DET 2|5|NSUBJ 3|5|AUX 4|5|ADVMOD 5|0|ROOT 6|8|DET 7|8|AMOD 8|5|OBJ 9|5|PUNCT
+--
+*CHI:	the cake is gonna get a mess [^ ns] .
+%mor:	det|the-Def-Art noun|cake aux|be-Fin-Ind-Pres-S3 adv|gonna verb|get-Inf-S det|a-Ind-Art noun|mess-Acc .
+%gra:	1|2|DET 2|5|NSUBJ 3|5|AUX 4|5|ADVMOD 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+--
+*CHI:	&~um the cake is gonna get a mess [^ ns] .
+%mor:	det|the-Def-Art noun|cake aux|be-Fin-Ind-Pres-S3 adv|gonna verb|get-Inf-S det|a-Ind-Art noun|mess-Acc .
+%gra:	1|2|DET 2|5|NSUBJ 3|5|AUX 4|5|ADVMOD 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+--
+*CHI:	it's raining .
+%mor:	pron|it-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|rain-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	it's raining [^ ns] .
+%mor:	pron|it-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|rain-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	a doggy , mommy and daddy [^ ns] .
+%mor:	det|a-Ind-Art adj|doggy-S1 cm|cm noun|mommy cconj|and noun|daddy .
+%gra:	1|2|DET 2|0|ROOT 3|4|PUNCT 4|2|CONJ 5|6|CC 6|2|CONJ 7|2|PUNCT
+--
+*CHI:	he's gonna fall down .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|fall-Inf-S adp|down .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|ADVMOD 6|4|PUNCT
+--
+*CHI:	he's running .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|run-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	<xxx> [/] he don't [^ ew:doesn't] [^ ev] get hurt [^ eu] .
+%mor:	pron|he-Prs-Nom-S3 aux|do-Fin-Ind-Pres-S3~part|not aux|get-Inf-S verb|hurt-Part-Past-S-Irr .
+%gra:	1|5|NSUBJ-PASS 2|5|AUX 3|5|ADVMOD 4|5|AUX-PASS 5|0|ROOT 6|5|PUNCT
+--
+*CHI:	[^ earg] fall down [^ eu] .
+%mor:	verb|fall-Fin-Imp-S adp|down .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+--
+*CHI:	he's gonna fall down .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|fall-Inf-S adp|down .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|ADVMOD 6|4|PUNCT
+--
+*CHI:	he fall [^ elexical] [^ ev] all the water on his hands [% dog splashing water on girl] [^ eu] .
+%mor:	pron|he-Prs-Nom-S3 verb|fall-Fin-Ind-Pres-S det|all-Def-Tot det|the-Def-Art noun|water-Acc adp|on pron|his-Prs-Gen-S3 noun|hand-Plur .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|DET-PREDET 4|5|DET 5|2|OBJ 6|8|CASE 7|8|NMOD-POSS 8|2|OBL 9|2|PUNCT
+--
+*CHI:	<he> [/] he put the water on his hands [% possibly referring to the boy] .
+%mor:	pron|he-Prs-Nom-S3 verb|put-Fin-Ind-Past-S3-Irr det|the-Def-Art noun|water-Acc adp|on pron|his-Prs-Gen-S3 noun|hand-Plur .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|7|CASE 6|7|NMOD-POSS 7|2|OBL 8|2|PUNCT
+*CHI:	I need 0a tissue [^ ns] .
+%mor:	pron|I-Prs-Nom-S1 verb|need-Fin-Ind-Pres-S1 noun|tissue-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+--
+*CHI:	water [^ ns] .
+%mor:	noun|water .
+%gra:	1|0|ROOT 2|1|PUNCT
+--
+*CHI:	he's brushing to the water on her arms [^ other] [^ eu] .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|brush-Part-Pres-S adp|to det|the-Def-Art noun|water adp|on pron|her-Prs-Gen-S3 noun|arm-Plur .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|9|CASE 8|9|NMOD-POSS 9|3|OBL 10|3|PUNCT
+--
+*CHI:	he put the water on her arms .
+%mor:	pron|he-Prs-Nom-S3 verb|put-Fin-Ind-Past-S3-Irr det|the-Def-Art noun|water-Acc adp|on pron|her-Prs-Gen-S3 noun|arm-Plur .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|7|CASE 6|7|NMOD-POSS 7|2|OBL 8|2|PUNCT
+--
+*CHI:	xxx I don't wanna be xxx .
+%mor:	pron|I-Prs-Nom-S1 aux|do-Fin-Ind-Pres-S1~part|not adv|wanna aux|be-Inf-S .
+%gra:	1|5|NSUBJ 2|5|AUX 3|5|ADVMOD 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+--
+*CHI:	she's giving [^ earg] 0a [^ emorph] donut [^ eu] .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|give-Part-Pres-S noun|donut-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+--
+*CHI:	she's gonna give [^ earg] a donut [^ eu] .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|give-Inf-S det|a-Ind-Art noun|donut-Acc .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+--
+*CHI:	she's gonna give a donut [^ ns] .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|give-Inf-S det|a-Ind-Art noun|donut-Acc .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+--
+*CHI:	he's putting xxx +...
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|put-Part-Pres-S +...
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*CHI:	I need 0a tissue [^ ns] .
+%mor:	pron|I-Prs-Nom-S1 verb|need-Fin-Ind-Pres-S1 noun|tissue-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+--
+*CHI:	I need 0a tissue [^ ns] .
+%mor:	pron|I-Prs-Nom-S1 verb|need-Fin-Ind-Pres-S1 noun|tissue-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+--
+*CHI:	she's crying .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|cry-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	she's crying [^ ns] .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|cry-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	she's crying [^ ns] .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|cry-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*CHI:	she's crying [^ ns] .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|cry-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	she's crying [^ ns] .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|cry-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*CHI:	she want [* m:03s] [^ ev] the bucket [^ eu] .
+%mor:	pron|she-Prs-Nom-S3 verb|want-Fin-Ind-Pres-S det|the-Def-Art noun|bucket-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+--
+*CHI:	she want [* m:03s] the bucket [^ ns] .
+%mor:	pron|she-Prs-Nom-S3 verb|want-Fin-Ind-Pres-S det|the-Def-Art noun|bucket-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+--
+*CHI:	she want [* m:03s] the bucket [^ ns] .
+%mor:	pron|she-Prs-Nom-S3 verb|want-Fin-Ind-Pres-S det|the-Def-Art noun|bucket-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+--
+*CHI:	the juice fall [^ ev] down [^ eu] .
+%mor:	det|the-Def-Art noun|juice verb|fall-Fin-Ind-Pres-S adv|down .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+--
+*CHI:	this juice is spilling .
+%mor:	det|this-Def-Dem-Sing noun|juice aux|be-Fin-Ind-Pres-S3 verb|spill-Part-Pres-S .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+--
+*CHI:	the juice fall [^ ev] down [^ eu] .
+%mor:	det|the-Def-Art noun|juice verb|fall-Fin-Ind-Pres-S adv|down .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+--
+*CHI:	a house [^ ns] .
+%mor:	det|a-Ind-Art noun|house .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+--
+*CHI:	big snowman [^ frag] [^ eu] .
+%mor:	adj|big-S1 noun|snowman .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+--
+*CHI:	she's gonna put the arm on top of 0the [^ emorph] snowman [^ eu] .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adv|gonna verb|put-Part-Past-S-Irr det|the-Def-Art noun|arm-Acc adp|on noun|top adp|of noun|snowman .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|6|DET 6|4|OBJ 7|8|CASE 8|4|OBL 9|10|CASE 10|8|NMOD 11|4|PUNCT
+*CHI:	I need 0a tissue [^ ns] .
+%mor:	pron|I-Prs-Nom-S1 verb|need-Fin-Ind-Pres-S1 noun|tissue-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+--
+*CHI:	he's running .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|run-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	he's raking [^ earg] [^ eu] .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|rake-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	she's going on the road .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S adp|on det|the-Def-Art noun|road .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+--
+*CHI:	she's going on the road [^ ns] .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S adp|on det|the-Def-Art noun|road .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+--
+*CHI:	she's going on the road [^ ns] .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S adp|on det|the-Def-Art noun|road .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+--
+*CHI:	a tree [^ ns] .
+%mor:	det|a-Ind-Art noun|tree .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+--
+*CHI:	[^ earg] is 0a [^ emorph] cat on 0the [^ emorph] tree [^ eu] .
+%mor:	aux|be-Fin-Ind-Pres-S3 noun|cat adp|on noun|tree .
+%gra:	1|4|COP 2|4|NSUBJ 3|4|CASE 4|0|ROOT 5|4|PUNCT
+--
+*CHI:	she's gonna fall down .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|fall-Inf-S adp|down .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|ADVMOD 6|4|PUNCT
+--
+*CHI:	I need 0a tissue [^ ns] .
+%mor:	pron|I-Prs-Nom-S1 verb|need-Fin-Ind-Pres-S1 noun|tissue-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+--
+*CHI:	he's eating .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|eat-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	he's getting bread out of the toaster .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|get-Part-Pres-S noun|bread-Acc adp|out adp|of det|the-Def-Art noun|toaster .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|8|CASE 6|8|CASE 7|8|DET 8|3|OBL 9|3|PUNCT
+--
+*CHI:	she's [^ ew:he] [^ epronoun] gon(na) put it on her plate [^ eu] .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adv|gonna verb|put-Part-Past-S-Irr pron|it-Prs-Acc-S3 adp|on pron|her-Prs-Gen-S3 noun|plate .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|OBJ 6|8|CASE 7|8|NMOD-POSS 8|4|OBL 9|4|PUNCT
+sofia@MacBookAir Downloads % grep '\*CHI' > chi_SLI.txt
+^C
+sofia@MacBookAir Downloads % grep “^%mor:” SLI.txt
+sofia@MacBookAir Downloads % grep '^%mor:' SLI.txt
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	pron|he-Prs-Nom-S3 verb|find-Fin-Ind-Past-S3-Irr det|the-Def-Art noun|cookie-Plur-Acc .
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	pron|he-Prs-Nom-S3 verb|get-Fin-Ind-Past-S3-Irr adj|wet-S1 .
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|happen-Inf-S adv|next ?
+%mor:	pron|he-Prs-Nom-S3 verb|get-Fin-Ind-Past-S3-Irr adj|wet-S1 adp|on pron|her-Prs-Gen-S3 noun|shoe .
+%mor:	noun|shoe-Plur .
+%mor:	intj|okay cm|cm cconj|and adv|then pron|what-Int-S1 adv|else aux|would-Fin-S verb|happen-Inf-S adp|in det|the-Def-Art noun|story ?
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	pron|he-Prs-Nom-S3 verb|find-Fin-Ind-Past-S3-Irr det|the-Def-Art noun|shoe-Acc adp|in det|the-Def-Art noun|water .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|put-Part-Pres-S .
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	det|the-Def-Art noun|rest verb|fall-Fin-Ind-S adv|down .
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|happen-Inf-S adv|next ?
+%mor:	verb|fall-Fin-Imp-S adp|down .
+%mor:	det|the-Def-Art noun|box-Plur aux|be-Fin-Ind-Pres-P3 verb|fall-Part-Pres-S adv|down .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|happen-Inf-S adv|next adp|in det|the-Def-Art noun|story ?
+%mor:	cconj|and pron|what-Int-S1 adj|else-S1 aux|would-Fin-S verb|happen-Inf-S adp|in det|the-Def-Art noun|story ?
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	pron|I-Prs-Nom-S1 verb|need-Fin-Ind-Pres-S1 noun|tissue-Acc .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	adv|just verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 pron|what-Rel-S1 pron|you-Prs-Nom-S2 verb|see-Fin-Ind-Pres-S2 adp|in det|the-Def-Art noun|picture .
+%mor:	pron|I-Prs-Nom-S1 verb|need-Fin-Ind-Pres-S1 noun|tissue-Acc .
+%mor:	adv|just verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 pron|what-Rel-S1 pron|you-Prs-Nom-S2 verb|see-Fin-Ind-Pres-S2 adp|in det|the-Def-Art noun|picture .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 pron|what-Rel-S1 pron|you-Prs-Nom-S2 verb|see-Fin-Ind-Pres-S2 adp|in det|the-Def-Art noun|picture .
+%mor:	pron|they-Prs-Nom-P3 verb|wear-Part-Pres-S noun|hat-Plur-Acc .
+%mor:	pron|they-Prs-Nom-P3 verb|take-Fin-Ind-Pres-P3 pron|their-Prs-Gen-P3 noun|hat-Acc adp|off .
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|happen-Inf-S adv|next ?
+%mor:	det|the-Def-Art noun|man~aux|be-Fin-Ind-Pres-S3 verb|take-Part-Pres-S pron|his-Prs-Gen-S3 noun|hat-Acc adp|off .
+%mor:	pron|what-Int-S1 aux|will-Fin-S verb|happen-Inf-S adp|in adv|just det|a-Ind-Art adj|little-S1 noun|while ?
+%mor:	pron|she-Prs-Nom-S3 verb|hurt-Fin-Ind-Past-S3-Irr .
+%mor:	cconj|and pron|what-Int-S1 adj|else-S1 aux|would-Fin-S verb|happen-Inf-S adp|in det|the-Def-Art noun|story ?
+%mor:	pron|they-Prs-Nom-P3 verb|hurt-Fin-Ind-Past-P3-Irr pron|I-Prs-Acc-S1 .
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	verb|fall-Part-Pres-S adp|down .
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	det|the-Def-Art noun|cake sconj|to verb|fall-Ger-S adp|down .
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|happen-Inf-S adv|next ?
+%mor:	pron|it-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adv|gonna verb|fall-Inf-S adp|down .
+%mor:	adv|so det|the-Def-Art noun|cake~aux|be-Fin-Ind-Pres-S3 adv|gonna verb|fall-Inf-S adv|down .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|happen-Inf-S adp|in det|a-Ind-Art adj|little-S1 noun|while ?
+%mor:	det|the-Def-Art noun|cake aux|be-Fin-Ind-Pres-S3 adv|gonna verb|get-Inf-S det|a-Ind-Art adj|big-S1 noun|mess-Acc .
+%mor:	cconj|and adv|then pron|what-Int-S1 adj|else-S1 aux|would-Fin-S verb|happen-Inf-S adp|in det|the-Def-Art noun|story ?
+%mor:	det|the-Def-Art noun|cake aux|be-Fin-Ind-Pres-S3 adv|gonna verb|get-Inf-S det|a-Ind-Art noun|mess-Acc .
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	det|the-Def-Art noun|cake aux|be-Fin-Ind-Pres-S3 adv|gonna verb|get-Inf-S det|a-Ind-Art noun|mess-Acc .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	pron|it-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|rain-Part-Pres-S .
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	pron|it-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|rain-Part-Pres-S .
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 adp|about pron|what-Int-S1 adj|else-S1 pron|you-Prs-Nom-S2 verb|see-Fin-Ind-Pres-S2 adp|in det|the-Def-Art noun|picture .
+%mor:	det|a-Ind-Art adj|doggy-S1 cm|cm noun|mommy cconj|and noun|daddy .
+%mor:	intj|okay cm|cm adv|so pron|we-Prs-Nom-P1 verb|have-Fin-Ind-Pres-P1 det|a-Ind-Art noun|doggie-Acc cm|cm det|a-Ind-Art noun|mommy cconj|and noun|daddy .
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|happen-Inf-S adv|next ?
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|fall-Inf-S adp|down .
+%mor:	cconj|and adv|then pron|what-Int-S1 adj|else-S1 aux|would-Fin-S verb|happen-Inf-S adp|in det|the-Def-Art noun|story ?
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|run-Part-Pres-S .
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 pron|what-Int-S1 adj|else-S1 pron|you-Prs-Nom-S2 verb|see-Fin-Ind-Pres-S2 adp|in det|the-Def-Art noun|picture .
+%mor:	pron|he-Prs-Nom-S3 aux|do-Fin-Ind-Pres-S3~part|not aux|get-Inf-S verb|hurt-Part-Past-S-Irr .
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|happen-Inf-S adv|next ?
+%mor:	verb|fall-Fin-Imp-S adp|down .
+%mor:	adv|so pron|we-Prs-Nom-P1 verb|have-Fin-Ind-Pres-P1 det|a-Ind-Art noun|man-Acc .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adj|about-S1 part|to verb|hug-Inf-S pron|his-Prs-Gen-S3 noun|daughter-Acc .
+%mor:	cconj|and pron|he-Prs-Nom-S3 verb|have-Fin-Ind-Pres-S3 det|a-Ind-Art noun|present-Acc adp|for pron|her-Prs-Acc-S3 .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 part|go verb|happen-Inf-S adv|next ?
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 part|go verb|happen-Inf-S adp|in det|the-Def-Art noun|story ?
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|fall-Inf-S adp|down .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	pron|he-Prs-Nom-S3 verb|fall-Fin-Ind-Pres-S det|all-Def-Tot det|the-Def-Art noun|water-Acc adp|on pron|his-Prs-Gen-S3 noun|hand-Plur .
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	pron|he-Prs-Nom-S3 verb|put-Fin-Ind-Past-S3-Irr det|the-Def-Art noun|water-Acc adp|on pron|his-Prs-Gen-S3 noun|hand-Plur .
+%mor:	pron|I-Prs-Nom-S1 verb|need-Fin-Ind-Pres-S1 noun|tissue-Acc .
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 adp|about pron|what-Int-S1 adj|else-S1 pron|you-Prs-Nom-S2 verb|see-Fin-Ind-Pres-S2 adp|in det|the-Def-Art noun|picture .
+%mor:	noun|water .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|happen-Inf-S adv|next ?
+%mor:	adv|so pron|there-Int-S1~verb|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|boy cconj|and det|a-Ind-Art noun|girl .
+%mor:	cconj|and det|the-Def-Art noun|puppy~part|s noun|splashing-Ger noun|water pron|you-Prs-Nom-S2 verb|say-Fin-Ind-Past-S2-Irr adp|into pron|her-Prs-Gen-S3 noun|hand-Plur .
+%mor:	pron|what-Int-S1 aux|will-Fin-S verb|happen-Inf-S adp|in adv|just det|a-Ind-Art adj|little-S1 noun|while ?
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|brush-Part-Pres-S adp|to det|the-Def-Art noun|water adp|on pron|her-Prs-Gen-S3 noun|arm-Plur .
+%mor:	cconj|and pron|what-Int-S1 adj|else-S1 aux|would-Fin-S verb|happen-Inf-S adp|in det|the-Def-Art noun|story ?
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	pron|he-Prs-Nom-S3 verb|put-Fin-Ind-Past-S3-Irr det|the-Def-Art noun|water-Acc adp|on pron|her-Prs-Gen-S3 noun|arm-Plur .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	pron|I-Prs-Nom-S1 aux|do-Fin-Ind-Pres-S1~part|not adv|wanna aux|be-Inf-S .
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|give-Part-Pres-S noun|donut-Acc .
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|happen-Inf-S adv|next ?
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|give-Inf-S det|a-Ind-Art noun|donut-Acc .
+%mor:	cconj|and pron|what-Int-S1 adj|else-S1 aux|would-Fin-S verb|happen-Inf-S adp|in det|the-Def-Art noun|story ?
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|give-Inf-S det|a-Ind-Art noun|donut-Acc .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|put-Part-Pres-S +...
+%mor:	pron|I-Prs-Nom-S1 verb|need-Fin-Ind-Pres-S1 noun|tissue-Acc .
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 pron|what-Rel-S1 pron|you-Prs-Nom-S2 verb|see-Fin-Ind-Pres-S2 adp|in det|the-Def-Art noun|picture .
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 pron|what-Rel-S1 pron|you-Prs-Nom-S2 verb|see-Fin-Ind-Pres-S2 adp|in det|the-Def-Art noun|picture .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|happen-Inf-S adv|next ?
+%mor:	adv|so pron|we-Prs-Nom-P1 verb|have-Fin-Ind-Pres-P1 det|a-Ind-Art adj|little-S1 noun|boy-Acc .
+%mor:	cconj|and pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|put-Part-Pres-S noun|scissors-Plur-Acc adp|into det|the-Def-Art noun|yarn noun|basket .
+%mor:	pron|it-Prs-Nom-S3 verb|look-Fin-Ind-Pres-S3 sconj|like pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adv|gonna verb|cut-Inf-S det|the-Def-Art noun|yarn-Acc .
+%mor:	pron|I-Prs-Nom-S1 verb|need-Fin-Ind-Pres-S1 noun|tissue-Acc .
+%mor:	pron|what-Int-S1 aux|will-Fin-S verb|happen-Inf-S adp|in adv|just det|a-Ind-Art adj|little-S1 noun|while ?
+%mor:	pron|what-Int-S1 adv|else aux|would-Fin-S verb|happen-Inf-S adp|in det|the-Def-Art noun|story ?
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|cry-Part-Pres-S .
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|cry-Part-Pres-S .
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 adp|about pron|what-Int-S1 adj|else-S1 pron|you-Prs-Nom-S2 verb|see-Fin-Ind-Pres-S2 adp|in det|the-Def-Art noun|picture .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|cry-Part-Pres-S .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|cry-Part-Pres-S .
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|happen-Inf-S adv|next ?
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|cry-Part-Pres-S .
+%mor:	pron|she-Prs-Nom-S3 verb|want-Fin-Ind-Pres-S det|the-Def-Art noun|bucket-Acc .
+%mor:	cconj|and adv|then pron|what-Int-S1 adj|else-S1 aux|would-Fin-S verb|happen-Inf-S adp|in det|the-Def-Art noun|story ?
+%mor:	pron|she-Prs-Nom-S3 verb|want-Fin-Ind-Pres-S det|the-Def-Art noun|bucket-Acc .
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	pron|she-Prs-Nom-S3 verb|want-Fin-Ind-Pres-S det|the-Def-Art noun|bucket-Acc .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	det|the-Def-Art noun|juice verb|fall-Fin-Ind-Pres-S adv|down .
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 pron|what-Int-S1 adj|else-S1 pron|you-Prs-Nom-S2 verb|see-Fin-Ind-Pres-S2 adp|in det|the-Def-Art noun|picture .
+%mor:	det|this-Def-Dem-Sing noun|juice aux|be-Fin-Ind-Pres-S3 verb|spill-Part-Pres-S .
+%mor:	cconj|and adv|then pron|what-Int-S1 adj|else-S1 aux|would-Fin-S verb|happen-Inf-S adp|in det|the-Def-Art noun|story ?
+%mor:	det|the-Def-Art noun|juice verb|fall-Fin-Ind-Pres-S adv|down .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	adv|just verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 pron|what-Rel-S1 pron|you-Prs-Nom-S2 verb|see-Fin-Ind-Pres-S2 adp|in det|the-Def-Art noun|picture .
+%mor:	det|a-Ind-Art noun|house .
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	adj|big-S1 noun|snowman .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|happen-Inf-S adv|next ?
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adv|gonna verb|put-Part-Past-S-Irr det|the-Def-Art noun|arm-Acc adp|on noun|top adp|of noun|snowman .
+%mor:	pron|I-Prs-Nom-S1 verb|need-Fin-Ind-Pres-S1 noun|tissue-Acc .
+%mor:	cconj|and adv|then pron|what-Int-S1 adj|else-S1 aux|would-Fin-S verb|happen-Inf-S adp|in det|the-Def-Art noun|story ?
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|run-Part-Pres-S .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|rake-Part-Pres-S .
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 adp|about pron|what-Int-S1 adj|else-S1 pron|you-Prs-Nom-S2 verb|see-Fin-Ind-Pres-S2 adp|in det|the-Def-Art noun|picture .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|happen-Inf-S adv|next ?
+%mor:	det|this-Def-Dem-Plur noun|kid-Plur aux|be-Fin-Ind-Pres-P3 verb|play-Part-Pres-S adp|in det|the-Def-Art noun|leave-Plur .
+%mor:	cconj|and pron|there-Int-S1~verb|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|puppy noun|barking-Ger .
+%mor:	cconj|and det|the-Def-Art noun|mom aux|be-Fin-Ind-Pres-S3 verb|wave-Part-Pres-S noun|goodbye-Acc .
+%mor:	pron|what-Int-S1 aux|will-Fin-S verb|happen-Inf-S adp|in adv|just det|a-Ind-Art adj|little-S1 noun|while ?
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S adp|on det|the-Def-Art noun|road .
+%mor:	cconj|and adv|then pron|what-Int-S1 adj|else-S1 aux|would-Fin-S verb|happen-Inf-S adp|in det|the-Def-Art noun|story ?
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S adp|on det|the-Def-Art noun|road .
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S adp|on det|the-Def-Art noun|road .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	adv|just verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 pron|what-Rel-S1 pron|you-Prs-Nom-S2 verb|see-Fin-Ind-Pres-S2 adp|in det|the-Def-Art noun|picture .
+%mor:	det|a-Ind-Art noun|tree .
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	aux|be-Fin-Ind-Pres-S3 noun|cat adp|on noun|tree .
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|happen-Inf-S adv|next ?
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|fall-Inf-S adp|down .
+%mor:	cconj|and adv|then pron|what-Int-S1 adj|else-S1 aux|would-Fin-S verb|happen-Inf-S adp|in det|the-Def-Art noun|story ?
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+%mor:	pron|I-Prs-Nom-S1 verb|need-Fin-Ind-Pres-S1 noun|tissue-Acc .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|the-Def-Art noun|picture ?
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|eat-Part-Pres-S .
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Pres-S3 verb|happen-Part-Pres-S adp|in det|this-Def-Dem-Sing noun|picture ?
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|get-Part-Pres-S noun|bread-Acc adp|out adp|of det|the-Def-Art noun|toaster .
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|happen-Inf-S adv|next ?
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adv|gonna verb|put-Part-Past-S-Irr pron|it-Prs-Acc-S3 adp|on pron|her-Prs-Gen-S3 noun|plate .
+%mor:	cconj|and adv|then pron|what-Int-S1 adj|else-S1 aux|would-Fin-S verb|happen-Inf-S adp|in det|the-Def-Art noun|story ?
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 num|one adj|more-Cmp-S1 noun|thing-Acc-Ger adp|about det|the-Def-Art noun|picture .
+sofia@MacBookAir Downloads % grep '^%mor:' TD.txt | grep -oE 'verb\|[^[:space:]]+'
+verb|happen-Part-Pres-S
+verb|want-Fin-Ind-Pres-S3
+verb|ride-Inf-S
+verb|forget-Fin-Ind-Past-S3-Irr
+verb|put-Inf-S
+verb|happen-Part-Pres-S
+verb|run-Part-Pres-S
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|point-Part-Pres-S
+verb|go-Inf-S
+verb|ride-Inf-S
+verb|tell-Fin-Imp-S
+verb|tell-Fin-Imp-S
+verb|hold-Part-Pres-S
+verb|hold-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|hold-Part-Pres-S
+verb|wear-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|get-Part-Pres-S
+verb|get-Part-Pres-S
+verb|happen-Inf-S
+verb|hold-Part-Pres-S
+verb|go-Inf-S
+verb|tell-Fin-Imp-S
+verb|look-Part-Pres-S
+verb|know-Inf-S
+verb|happen-Part-Pres-S
+verb|stand-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|get-Fin-Ind-Past-S3-Irr
+verb|happen-Inf-S
+verb|carry-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|carry-Inf-S
+verb|splash-Fin-Ind-Past-S3
+verb|happen-Part-Pres-S
+verb|make-Part-Pres-S
+verb|drop-Fin-Ind-Past-S3
+verb|play-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|trip-Fin-Ind-Past-S3
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|tell-Fin-Imp-S
+verb|fall-Fin-Ind-Past-S3
+verb|happen-Part-Pres-S
+verb|rake-Part-Pres-S
+verb|say-Inf-S
+verb|try-Part-Pres-S
+verb|clean-Inf-S
+verb|happen-Part-Pres-S
+verb|try-Part-Pres-S
+verb|clean-Inf-S
+verb|try-Part-Pres-S
+verb|clean-Inf-S
+verb|happen-Inf-S
+verb|rake-Part-Pres-S
+verb|raking-Part-Pres-S
+verb|raking-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|happen-Part-Pres-S
+verb|have-Fin-Ind-Pres-S3
+verb|happen-Part-Pres-S
+verb|make-Fin-Ind-Past-S3-Irr
+verb|happen-Inf-S
+verb|make-Inf-S
+verb|tell-Fin-Imp-S
+verb|wipe-Inf-S
+verb|wipe-Inf-S
+verb|happen-Part-Pres-S
+verb|push-Part-Pres-S
+verb|push-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|try-Part-Pres-S
+verb|get-Inf-S
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|try-Part-Pres-S
+verb|get-Inf-S
+verb|knock-Fin-Ind-Past-S3
+verb|happen-Inf-S
+verb|fall-Inf-S
+verb|tell-Fin-Imp-S
+verb|get-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|spill-Fin-Ind-Past-S3
+verb|try-Part-Pres-S
+verb|get-Inf-S
+verb|fall-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|try-Part-Pres-S
+verb|get-Inf-S
+verb|get-Inf-S
+verb|happen-Inf-S
+verb|wash-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|wash-Fin-Ind-Past-S3
+verb|tell-Inf-S
+verb|wash-Fin-Ind-Past-S3
+verb|happen-Part-Pres-S
+verb|try-Part-Pres-S
+verb|pour-Inf-S
+verb|happen-Part-Pres-S
+verb|stand-Fin-Ind-Pres-S
+verb|happen-Inf-S
+verb|trip-Inf-S
+verb|tell-Fin-Imp-S
+verb|happen-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|try-Part-Pres-S
+verb|drive-Inf-S
+verb|drive-Part-Pres-S
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|pull-Part-Pres-S
+verb|give-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|flash-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|need-Fin-Ind-Pres-S3
+verb|happen-Part-Pres-S
+verb|call-Part-Pres-S
+verb|stand-Part-Pres-S
+verb|watch-Part-Pres-S
+verb|see-Inf-S
+verb|fall-Part-Pres-S
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|fall-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|fall-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|try-Part-Pres-S
+verb|iceskate-Inf-S
+verb|happen-Part-Pres-S
+verb|make-Part-Pres-S
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|shoveling-Part-Pres-S
+verb|shovel-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|throw-Part-Pres-S
+verb|throw-Part-Pres-S
+verb|throw-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|toast-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|go-Inf-S
+verb|happen-Inf-S
+verb|look-Fin-Ind-Pres-S3
+verb|tell-Fin-Imp-S
+verb|spill-Fin-Ind-Past-S3
+verb|happen-Part-Pres-S
+verb|crawl-Ger-S
+verb|sit-Part-Pres-S
+verb|want-Fin-Ind-Pres-S3
+verb|play-Inf-S
+verb|happen-Part-Pres-S
+verb|sitting-Part-Pres-S
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|take-Part-Pres-S
+verb|happen-Inf-S
+verb|say-Part-Pres-S
+verb|say-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|have-Fin-Ind-Pres-S3
+verb|happen-Part-Pres-S
+verb|go-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|be-Fin-Ind-Pres-S3
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|sit-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|share-Part-Pres-S
+sofia@MacBookAir Downloads % grep '^%mor:' TD.txt | grep -oE 'verb\|[^[:space:]]+' | wc -l 
+
+     178
+sofia@MacBookAir Downloads % grep '^%mor:' SLI.txt | grep -oE 'verb\|[^[:space:]]+'
+verb|happen-Part-Pres-S
+verb|find-Fin-Ind-Past-S3-Irr
+verb|happen-Part-Pres-S
+verb|get-Fin-Ind-Past-S3-Irr
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|get-Fin-Ind-Past-S3-Irr
+verb|happen-Inf-S
+verb|tell-Fin-Imp-S
+verb|find-Fin-Ind-Past-S3-Irr
+verb|happen-Part-Pres-S
+verb|put-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|fall-Fin-Ind-S
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|fall-Fin-Imp-S
+verb|fall-Part-Pres-S
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|happen-Inf-S
+verb|tell-Fin-Imp-S
+verb|need-Fin-Ind-Pres-S1
+verb|happen-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|see-Fin-Ind-Pres-S2
+verb|need-Fin-Ind-Pres-S1
+verb|tell-Fin-Imp-S
+verb|see-Fin-Ind-Pres-S2
+verb|happen-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|see-Fin-Ind-Pres-S2
+verb|wear-Part-Pres-S
+verb|take-Fin-Ind-Pres-P3
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|take-Part-Pres-S
+verb|happen-Inf-S
+verb|hurt-Fin-Ind-Past-S3-Irr
+verb|happen-Inf-S
+verb|hurt-Fin-Ind-Past-P3-Irr
+verb|tell-Fin-Imp-S
+verb|happen-Part-Pres-S
+verb|fall-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|fall-Ger-S
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|fall-Inf-S
+verb|fall-Inf-S
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|get-Inf-S
+verb|happen-Inf-S
+verb|get-Inf-S
+verb|tell-Fin-Imp-S
+verb|get-Inf-S
+verb|happen-Part-Pres-S
+verb|rain-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|rain-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|see-Fin-Ind-Pres-S2
+verb|have-Fin-Ind-Pres-P1
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|fall-Inf-S
+verb|happen-Inf-S
+verb|tell-Fin-Imp-S
+verb|happen-Part-Pres-S
+verb|run-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|see-Fin-Ind-Pres-S2
+verb|hurt-Part-Past-S-Irr
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|fall-Fin-Imp-S
+verb|have-Fin-Ind-Pres-P1
+verb|hug-Inf-S
+verb|have-Fin-Ind-Pres-S3
+verb|happen-Inf-S
+verb|happen-Inf-S
+verb|fall-Inf-S
+verb|happen-Part-Pres-S
+verb|fall-Fin-Ind-Pres-S
+verb|happen-Part-Pres-S
+verb|put-Fin-Ind-Past-S3-Irr
+verb|need-Fin-Ind-Pres-S1
+verb|tell-Fin-Imp-S
+verb|see-Fin-Ind-Pres-S2
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|be-Fin-Ind-Pres-S3
+verb|say-Fin-Ind-Past-S2-Irr
+verb|happen-Inf-S
+verb|brush-Part-Pres-S
+verb|happen-Inf-S
+verb|tell-Fin-Imp-S
+verb|put-Fin-Ind-Past-S3-Irr
+verb|happen-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|give-Part-Pres-S
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|give-Inf-S
+verb|happen-Inf-S
+verb|tell-Fin-Imp-S
+verb|give-Inf-S
+verb|happen-Part-Pres-S
+verb|put-Part-Pres-S
+verb|need-Fin-Ind-Pres-S1
+verb|tell-Fin-Imp-S
+verb|see-Fin-Ind-Pres-S2
+verb|happen-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|see-Fin-Ind-Pres-S2
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|have-Fin-Ind-Pres-P1
+verb|put-Part-Pres-S
+verb|look-Fin-Ind-Pres-S3
+verb|cut-Inf-S
+verb|need-Fin-Ind-Pres-S1
+verb|happen-Inf-S
+verb|happen-Inf-S
+verb|tell-Fin-Imp-S
+verb|happen-Part-Pres-S
+verb|cry-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|cry-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|see-Fin-Ind-Pres-S2
+verb|cry-Part-Pres-S
+verb|cry-Part-Pres-S
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|cry-Part-Pres-S
+verb|want-Fin-Ind-Pres-S
+verb|happen-Inf-S
+verb|want-Fin-Ind-Pres-S
+verb|tell-Fin-Imp-S
+verb|want-Fin-Ind-Pres-S
+verb|happen-Part-Pres-S
+verb|fall-Fin-Ind-Pres-S
+verb|happen-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|see-Fin-Ind-Pres-S2
+verb|spill-Part-Pres-S
+verb|happen-Inf-S
+verb|fall-Fin-Ind-Pres-S
+verb|happen-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|see-Fin-Ind-Pres-S2
+verb|happen-Part-Pres-S
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|put-Part-Past-S-Irr
+verb|need-Fin-Ind-Pres-S1
+verb|happen-Inf-S
+verb|run-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|rake-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|see-Fin-Ind-Pres-S2
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|play-Part-Pres-S
+verb|be-Fin-Ind-Pres-S3
+verb|wave-Part-Pres-S
+verb|happen-Inf-S
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|go-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|go-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|see-Fin-Ind-Pres-S2
+verb|happen-Part-Pres-S
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|fall-Inf-S
+verb|happen-Inf-S
+verb|tell-Fin-Imp-S
+verb|need-Fin-Ind-Pres-S1
+verb|happen-Part-Pres-S
+verb|eat-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|get-Part-Pres-S
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|put-Part-Past-S-Irr
+verb|happen-Inf-S
+verb|tell-Fin-Imp-S
+sofia@MacBookAir Downloads % grep '^%mor:' SLI.txt | grep -oE 'verb\|[^[:space:]]+' | wc -l
+
+     196
+sofia@MacBookAir Downloads % 
+sofia@MacBookAir Downloads % grep -c '^@G:' TD.txt
+15
+sofia@MacBookAir Downloads % grep -c '^\*CHI:' TD.txt
+102
+sofia@MacBookAir Downloads % grep -c '^\*INV:' TD.txt
+67
+sofia@MacBookAir Downloads % grep '[* m:' TD.txt 
+grep: brackets ([ ]) not balanced
+sofia@MacBookAir Downloads % grep -F '\[\* m:' TD.txt
+sofia@MacBookAir Downloads % grep -oE '\[\* m:[^]]+\]' TD.txt
+[* m:03s]
+[* m:0ing]
+sofia@MacBookAir Downloads % grep -oE '\[\^ [^]]+\]' TD.txt | sed -E 's/^\[\^ //; s/\]$//' | sort | uniq -c | sort -nr
+  21 eu
+   7 ev
+   5 ns
+   5 emorph
+   4 elexical
+   3 earg
+   2 modal
+   2 cat
+   1 other
+   1 ew:were
+   1 ew:those
+   1 ew:taking
+   1 ew:she
+   1 ew:round
+   1 ew:poured
+   1 ew:fell
+   1 ew:feet
+   1 ew:are
+   1 epronoun
+   1 econj
+sofia@MacBookAir Downloads % grep -oE '\[\^ x [0-9]+\]' TD.txt
+sofia@MacBookAir Downloads % grep -o '\[\^ x [0-9]+\]' TD.txt 
+sofia@MacBookAir Downloads % grep -o '\[\^ x [0-9]*\]' TD.txt
+sofia@MacBookAir Downloads % grep -c '\[ 
+quote>  
+sofia@MacBookAir Downloads % grep -c '\[/\]' TD.txt
+24
+sofia@MacBookAir Downloads % grep -c '\[>\]' TD.txt 
+1
+sofia@MacBookAir Downloads % grep -c '/[<\]' TD.txt
+0
+sofia@MacBookAir Downloads % grep -c '^\.+\.\.\.' TD.txt 
+0
+sofia@MacBookAir Downloads % grep -c '^\*.*+\/\.' TD.txt
+2
+sofia@MacBookAir Downloads % grep '^\*CHI:' TD.txt | sed -E 's/\[[^]]*\]//g' | grep -oE '0[a-zA-Z]+'
+0is
+0is
+0a
+0are
+sofia@MacBookAir Downloads % grep -o ‘[a-zA-Z]*\@[on]’ TD.txt 
+zsh: no matches found: ‘[a-zA-Z]*@[on]’
+sofia@MacBookAir Downloads % grep -oE '[a-zA-Z]+@[on]' TD.txt 
+sofia@MacBookAir Downloads % grep -o '[a-zA-Z]+@[on]' SLI.txt 
+sofia@MacBookAir Downloads % grep ‘(%com:|%act:|%xov)’ SLI.txt
+zsh: no matches found: ‘(%com:|%act:|%xov)’
+sofia@MacBookAir Downloads % grep ‘(%com:|%act:|%xov)’ TD.txt 
+zsh: no matches found: ‘(%com:|%act:|%xov)’
+sofia@MacBookAir Downloads % grep '(%com:|%act:|%xov)' TD.txt 
+sofia@MacBookAir Downloads % grep -o “\[% [^]]*\]”  TD.TXT 
+zsh: no matches found: [^]]*]”
+sofia@MacBookAir Downloads % grep -o '\[% [^]]*\]'  TD.txt
+[% “he” referring to the boy who the girl tripped over]
+sofia@MacBookAir Downloads % grep “@ID.*CHI” TD.txt | wc -l
+zsh: no matches found: “@ID.*CHI”
+       0
+sofia@MacBookAir Downloads % grep -o “\bxxx\b” td.txt | wc -l
+       0
+sofia@MacBookAir Downloads % grep -o “\bxxx\b” TD.txt | wc -l
+       0
+sofia@MacBookAir Downloads % grep -o '\bxxx\' TD.txt | wc -l
+grep: trailing backslash (\)
+       0
+sofia@MacBookAir Downloads % : grep -o 'is' TD.txt | wc -l
+       0
+sofia@MacBookAir Downloads % Grep -ow 'is' TD.txt | wc -l
+      33
+sofia@MacBookAir Downloads % 
+sofia@MacBookAir Downloads % grep -A2 'CHI' TD.txt
+@Participants:	INV Investigator, CHI Target_Child
+@ID:	eng|EisenbergGuo|INV|||||Investigator|||
+@ID:	eng|EisenbergGuo|CHI|3;07.|female|||Target_Child|||
+@Comment:	batchalign3 8e6fa18 | morphosyntax: stanza:1.12.2:noretok:native-mwt9 | 2026-09-09T08:58:25Z
+@Comment:	Language = English
+--
+*CHI:	<he wants> [/] she wants to ride [^ elexical] her dolly [^ eu] .
+%mor:	pron|she-Prs-Nom-S3 verb|want-Fin-Ind-Pres-S3 part|to verb|ride-Inf-S pron|her-Prs-Gen-S3 noun|dolly-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|6|NMOD-POSS 6|4|OBJ 7|2|PUNCT
+*CHI:	but <it> [/] she forgot to put her in her desk drawer .
+%mor:	cconj|but pron|she-Prs-Nom-S3 verb|forget-Fin-Ind-Past-S3-Irr part|to verb|put-Inf-S pron|her-Prs-Acc-S3 adp|in pron|her-Prs-Gen-S3 noun|desk noun|drawer .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|OBJ 7|10|CASE 8|10|NMOD-POSS 9|10|COMPOUND 10|5|OBL 11|3|PUNCT
+--
+*CHI:	she's running .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|run-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	he's pointing to go this way and ride <her thing (.) and> [/] that thing .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|point-Part-Pres-S part|to verb|go-Inf-S det|this-Def-Dem-Sing noun|way cconj|and verb|ride-Inf-S det|that-Def-Dem-Sing noun|thing-Acc-Ger .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|7|DET 7|5|OBL-UNMARKED 8|9|CC 9|5|CONJ 10|11|DET 11|9|OBJ 12|3|PUNCT
+--
+*CHI:	<the girl> [/] but the daddy's holding the doll .
+%mor:	cconj|but det|the-Def-Art noun|daddy~part|s verb|hold-Part-Pres-S det|the-Def-Art noun|doll-Acc .
+%gra:	1|5|CC 2|3|DET 3|5|NSUBJ 4|3|CASE 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*CHI:	and she's holding her with his hand [^ eu] .
+%mor:	cconj|and pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|hold-Part-Pres-S pron|her-Prs-Acc-S3 adp|with pron|his-Prs-Gen-S3 noun|hand .
+%gra:	1|4|CC 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|8|CASE 7|8|NMOD-POSS 8|4|OBL 9|4|PUNCT
+--
+*CHI:	the girl's holding her shoes on her hand .
+%mor:	det|the-Def-Art noun|girl~part|s verb|hold-Part-Pres-S pron|her-Prs-Gen-S3 noun|shoe-Plur-Acc adp|on pron|her-Prs-Gen-S3 noun|hand .
+%gra:	1|2|DET 2|4|NSUBJ 3|2|CASE 4|0|ROOT 5|6|NMOD-POSS 6|4|OBJ 7|9|CASE 8|9|NMOD-POSS 9|4|OBL 10|4|PUNCT
+*CHI:	and <&~th> [/] they're wearing their shoes on their foot [^ ew:feet] [^ emorph] [^ eu] .
+%mor:	cconj|and pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|wear-Part-Pres-S pron|their-Prs-Gen-P3 noun|shoe-Plur-Acc adp|on pron|their-Prs-Gen-P3 noun|foot .
+%gra:	1|4|CC 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|NMOD-POSS 6|4|OBJ 7|9|CASE 8|9|NMOD-POSS 9|4|OBL 10|4|PUNCT
+--
+*CHI:	the daddy's getting ready for something .
+%mor:	det|the-Def-Art noun|daddy~aux|be-Fin-Ind-Pres-S3 verb|get-Part-Pres-S adj|ready-S1 adp|for pron|something-Ind-S1 .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|XCOMP 6|7|CASE 7|5|OBL 8|4|PUNCT
+*CHI:	<and the girl was> [/] and the boy is getting ready too .
+%mor:	cconj|and det|the-Def-Art noun|boy aux|be-Fin-Ind-Pres-S3 verb|get-Part-Pres-S adj|ready-S1 adv|too .
+%gra:	1|5|CC 2|3|DET 3|5|NSUBJ 4|5|AUX 5|0|ROOT 6|5|XCOMP 7|5|ADVMOD 8|5|PUNCT
+--
+*CHI:	the dog is holding a shoe so he can [^ modal] go too .
+%mor:	det|the-Def-Art noun|dog aux|be-Fin-Ind-Pres-S3 verb|hold-Part-Pres-S det|a-Ind-Art noun|shoe-Acc sconj|so pron|he-Prs-Nom-S3 aux|can-Fin-S verb|go-Inf-S adv|too .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|10|MARK 8|10|NSUBJ 9|10|AUX 10|4|ADVCL 11|10|ADVMOD 12|4|PUNCT
+--
+*CHI:	the daddy is looking <in the> [/] in [/] <in the> [/] in .
+%mor:	det|the-Def-Art noun|daddy aux|be-Fin-Ind-Pres-S3 verb|look-Part-Pres-S adp|in .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|ADVMOD 6|4|PUNCT
+*CHI:	I don't know what that word is xxx +...
+%mor:	pron|I-Prs-Nom-S1 aux|do-Fin-Ind-Pres-S1~part|not verb|know-Inf-S pron|what-Int-S1 det|that-Def-Dem-Sing noun|word aux|be-Fin-Ind-Pres-S3 +...
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|OBJ 6|7|DET 7|5|NSUBJ 8|5|ACL-RELCL 9|4|PUNCT
+--
+*CHI:	the girl is standing in love with her dress [^ other] [^ eu] .
+%mor:	det|the-Def-Art noun|girl aux|be-Fin-Ind-Pres-S3 verb|stand-Part-Pres-S adp|in noun|love adp|with pron|her-Prs-Gen-S3 noun|dress .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|CASE 6|4|OBL 7|9|CASE 8|9|NMOD-POSS 9|4|OBL 10|4|PUNCT
+--
+*CHI:	the boy got some dirt <and mud> [/] and &~uh some water and mud .
+%mor:	det|the-Def-Art noun|boy verb|get-Fin-Ind-Past-S3-Irr det|some-Def-Ind noun|dirt-Acc cconj|and det|some-Def-Ind noun|water cconj|and noun|mud .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|8|CC 7|8|DET 8|5|CONJ 9|10|CC 10|8|CONJ 11|3|PUNCT
+*CHI:	<and &~uh &~uh> [/] and that's not good .
+%mor:	cconj|and pron|that-Dem~aux|be-Fin-Ind-Pres-S3 part|not adj|good-S1 .
+%gra:	1|5|CC 2|5|NSUBJ 3|5|COP 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+--
+*CHI:	the boy's carrying it .
+%mor:	det|the-Def-Art noun|boy~aux|be-Fin-Ind-Pres-S3 verb|carry-Part-Pres-S pron|it-Prs-Acc-S3 .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+--
+*CHI:	he's gonna [^ cat] carry the bucket .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|carry-Inf-S det|the-Def-Art noun|bucket-Acc .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*CHI:	<and> [/] but [^ econj] the dog splashed the girl [^ eu] .
+%mor:	cconj|but det|the-Def-Art noun|dog verb|splash-Fin-Ind-Past-S3 det|the-Def-Art noun|girl-Acc .
+%gra:	1|4|CC 2|3|DET 3|4|NSUBJ 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+--
+*CHI:	the boy , <he> [/] he was making something with water and mud .
+%mor:	det|the-Def-Art noun|boy cm|cm pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-Irr verb|make-Part-Pres-S pron|something-Ind-S1 adp|with noun|water cconj|and noun|mud .
+%gra:	1|2|DET 2|6|VOCATIVE 3|2|PUNCT 4|6|NSUBJ 5|6|AUX 6|0|ROOT 7|6|OBJ 8|9|CASE 9|7|NMOD 10|11|CC 11|9|CONJ 12|6|PUNCT
+*CHI:	but the girl dropped her thing .
+%mor:	cconj|but det|the-Def-Art noun|girl verb|drop-Fin-Ind-Past-S3 pron|her-Prs-Gen-S3 noun|thing-Acc-Ger .
+%gra:	1|4|CC 2|3|DET 3|4|NSUBJ 4|0|ROOT 5|6|NMOD-POSS 6|4|OBJ 7|4|PUNCT
+*CHI:	<and> [/] and <the &~g> [/] the other girl was playing .
+%mor:	cconj|and det|the-Def-Art adj|other-S1 noun|girl aux|be-Fin-Ind-Past-S3-Irr verb|play-Part-Pres-S .
+%gra:	1|6|CC 2|4|DET 3|4|AMOD 4|6|NSUBJ 5|6|AUX 6|0|ROOT 7|6|PUNCT
+--
+*CHI:	he [^ ew:she] [^ epronoun] tripped on the feet and the leg [^ eu] .
+%mor:	pron|he-Prs-Nom-S3 verb|trip-Fin-Ind-Past-S3 adp|on det|the-Def-Art noun|foot-Plur cconj|and det|the-Def-Art noun|leg .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|CASE 4|5|DET 5|2|OBL 6|8|CC 7|8|DET 8|5|CONJ 9|2|PUNCT
+--
+*CHI:	<he> [/] he's mad [% “he” referring to the boy who the girl tripped over] .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adj|mad-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	the bread falled [^ ew:fell] [^ ev] [^ eu] .
+%mor:	det|the-Def-Art noun|bread verb|fall-Fin-Ind-Past-S3 .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	the girl is raking the leaf pile .
+%mor:	det|the-Def-Art noun|girl aux|be-Fin-Ind-Pres-S3 verb|rake-Part-Pres-S det|the-Def-Art noun|leaf noun|pile-Acc .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|7|DET 6|7|COMPOUND 7|4|OBJ 8|4|PUNCT
+--
+*CHI:	the girl is xxx the leaf pile .
+%mor:	det|the-Def-Art noun|girl aux|be-Fin-Ind-Pres-S3 det|the-Def-Art noun|leaf noun|pile .
+%gra:	1|2|DET 2|6|NSUBJ 3|6|COP 4|6|DET 5|6|COMPOUND 6|0|ROOT 7|6|PUNCT
+*CHI:	and the other girl is trying to clean xxx +/.
+%mor:	cconj|and det|the-Def-Art adj|other-S1 noun|girl aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|clean-Inf-S +/.
+%gra:	1|6|CC 2|4|DET 3|4|AMOD 4|6|NSUBJ 5|6|AUX 6|0|ROOT 7|8|MARK 8|6|XCOMP 9|6|PUNCT
+--
+*CHI:	the girl is trying to clean it up .
+%mor:	det|the-Def-Art noun|girl aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|clean-Inf-S pron|it-Prs-Acc-S3 adp|up .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|6|OBJ 8|6|COMPOUND-PRT 9|4|PUNCT
+*CHI:	the girl is trying to clean it up [^ ns] .
+%mor:	det|the-Def-Art noun|girl aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|clean-Inf-S pron|it-Prs-Acc-S3 adp|up .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|6|OBJ 8|6|COMPOUND-PRT 9|4|PUNCT
+--
+*CHI:	the little boy is raking [^ earg] [^ eu] .
+%mor:	det|the-Def-Art adj|little-S1 noun|boy aux|be-Fin-Ind-Pres-S3 verb|rake-Part-Pres-S .
+%gra:	1|3|DET 2|3|AMOD 3|5|NSUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*CHI:	and the daddy's raking [^ earg] [^ eu] .
+%mor:	cconj|and det|the-Def-Art noun|daddy~aux|be-Fin-Ind-Pres-S3 verb|raking-Part-Pres-S .
+%gra:	1|5|CC 2|3|DET 3|5|NSUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*CHI:	mother's raking [^ earg] [^ eu] .
+%mor:	noun|mother~aux|be-Fin-Ind-Pres-S3 verb|raking-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	the doggy <&~I &~I> [/] is right there .
+%mor:	det|the-Def-Art noun|doggy aux|be-Fin-Ind-Pres-S3 adj|right-S1 adv|there .
+%gra:	1|2|DET 2|5|NSUBJ 3|5|COP 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+--
+*CHI:	the cake has black on it .
+%mor:	det|the-Def-Art noun|cake verb|have-Fin-Ind-Pres-S3 adj|black-S1 adp|on pron|it-Prs-Acc-S3 .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|6|CASE 6|3|OBL 7|3|PUNCT
+*CHI:	but it wasn't sposta .
+%mor:	cconj|but pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-Irr~part|not adj|sposta-S1 .
+%gra:	1|5|CC 2|5|NSUBJ 3|5|COP 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+--
+*CHI:	the dog made all this black .
+%mor:	det|the-Def-Art noun|dog verb|make-Fin-Ind-Past-S3-Irr det|all-Def-Tot det|this-Def-Dem-Sing noun|black-Acc .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|6|DET-PREDET 5|6|DET 6|3|OBJ 7|3|PUNCT
+--
+*CHI:	the cake is all dirty .
+%mor:	det|the-Def-Art noun|cake aux|be-Fin-Ind-Pres-S3 adv|all adj|dirty-S1 .
+%gra:	1|2|DET 2|5|NSUBJ 3|5|COP 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+*CHI:	they hafta make another one .
+%mor:	pron|they-Prs-Nom-P3 aux|hafta-Fin-Ind-Pres-P3 verb|make-Inf-S det|another-Def-Ind noun|one-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+--
+*CHI:	she's gonna [^ cat] &~uh wipe it all up .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adv|gonna verb|wipe-Inf-S pron|it-Prs-Acc-S3 det|all-Def-Tot adp|up .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|OBJ 6|7|DET 7|4|COMPOUND-PRT 8|4|PUNCT
+*CHI:	she's gonna wipe it .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|wipe-Inf-S pron|it-Prs-Acc-S3 .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|MARK 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+--
+*CHI:	the girl's pushing the cart .
+%mor:	det|the-Def-Art noun|girl~part|s verb|push-Part-Pres-S det|the-Def-Art noun|cart-Acc .
+%gra:	1|2|DET 2|4|NSUBJ 3|2|CASE 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*CHI:	the daddy's pushing the cart .
+%mor:	det|the-Def-Art noun|daddy~aux|be-Fin-Ind-Pres-S3 verb|push-Part-Pres-S det|the-Def-Art noun|cart-Acc .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+--
+*CHI:	she's trying to get oranges .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|get-Inf-S noun|orange-Plur-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|OBJ 7|3|PUNCT
+--
+*CHI:	the boy's trying to get (.) some .
+%mor:	det|the-Def-Art noun|boy~aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|get-Inf-S det|some-Def-Ind .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|6|OBJ 8|4|PUNCT
+*CHI:	<what's that> [/] what's that +...
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|that-Dem +...
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	they will [^ modal] fall .
+%mor:	pron|they-Prs-Nom-P3 aux|will-Fin-S verb|fall-Inf-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	<the the mommy> [/] that [^ ew:those] [^ emorph] people was [^ ew:were] [^ ev] getting some red things [^ eu] .
+%mor:	sconj|that noun|person-Plur aux|be-Fin-Ind-Past-S3-Irr verb|get-Part-Pres-S det|some-Def-Ind adj|red-S1 noun|thing-Plur-Acc .
+%gra:	1|4|MARK 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|7|DET 6|7|AMOD 7|4|OBJ 8|4|PUNCT
+--
+*CHI:	the mommy spilled it .
+%mor:	det|the-Def-Art noun|mommy verb|spill-Fin-Ind-Past-S3 pron|it-Prs-Acc-S3 .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	he's <&~g> [/] trying to get a cookie .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|get-Inf-S det|a-Ind-Art noun|cookie-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|7|DET 7|5|OBJ 8|3|PUNCT
+*CHI:	<but> [/] he's falling .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|fall-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	he's trying to get a cookie [^ ns] .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|get-Inf-S det|a-Ind-Art noun|cookie-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|7|DET 7|5|OBJ 8|3|PUNCT
+*CHI:	but he's too short to .
+%mor:	cconj|but pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adv|too adj|short-S1 part|to .
+%gra:	1|5|CC 2|5|NSUBJ 3|5|COP 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT 7|5|PUNCT
+*CHI:	she hadta get hers .
+%mor:	pron|she-Prs-Nom-S3 aux|hadt-Fin-Ind-Pres-S3 verb|get-Inf-S pron|her-Prs-S3 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+--
+*CHI:	she's washing the plate .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|wash-Part-Pres-S det|the-Def-Art noun|plate-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+--
+*CHI:	<the plate> [/] that plate 0is [^ ev] already washed [^ eu] .
+%mor:	det|that-Def-Dem-Sing noun|plate adv|already verb|wash-Fin-Ind-Past-S3 .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+--
+*CHI:	the plate 0is already washed [^ ns] .
+%mor:	det|the-Def-Art noun|plate adv|already verb|wash-Fin-Ind-Past-S3 .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+--
+*CHI:	<&~h> [/] he's trying to pour something on him .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|pour-Inf-S pron|something-Ind-S1 adp|on pron|he-Prs-Acc-S3 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|OBJ 7|8|CASE 8|5|OBL 9|3|PUNCT
+*CHI:	he's mad .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adj|mad-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	the mommy , she stand [* m:03s] [^ ev] like this [^ eu] .
+%mor:	det|the-Def-Art noun|mommy cm|cm pron|she-Prs-Nom-S3 verb|stand-Fin-Ind-Pres-S adp|like pron|this-Dem-S1 .
+%gra:	1|2|DET 2|5|DISLOCATED 3|2|PUNCT 4|5|NSUBJ 5|0|ROOT 6|7|CASE 7|5|OBL 8|5|PUNCT
+--
+*CHI:	the wagon's down there .
+%mor:	det|the-Def-Art noun|wagon~part|s adv|down adv|there .
+%gra:	1|2|DET 2|5|NSUBJ 3|2|CASE 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+*CHI:	she's gonna <skip> [/] (.) trip .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|trip-Inf-S .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+--
+*CHI:	&~um the buckets and the shovel and the other shovel's [^ ew:are] [^ ev] down there [^ eu] .
+%mor:	det|the-Def-Art noun|bucket-Plur cconj|and det|the-Def-Art noun|shovel cconj|and det|the-Def-Art adj|other-S1 noun|shovel~aux|be-Fin-Ind-Pres-S3 adv|down adv|there .
+%gra:	1|2|DET 2|0|ROOT 3|5|CC 4|5|DET 5|2|CONJ 6|9|CC 7|9|DET 8|9|AMOD 9|2|CONJ 10|12|COP 11|12|ADVMOD 12|2|CONJ 13|2|PUNCT
+--
+*CHI:	the bus is there .
+%mor:	det|the-Def-Art noun|bus aux|be-Fin-Ind-Pres-S3 adv|there .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+*CHI:	but [^ emorph] they're mad at her [^ eu] .
+%mor:	cconj|but pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 adj|mad-S1 adp|at pron|her-Prs-Acc-S3 .
+%gra:	1|4|CC 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|6|CASE 6|4|OBL 7|4|PUNCT
+--
+*CHI:	the dog's in the road .
+%mor:	det|the-Def-Art noun|dog~part|s adp|in det|the-Def-Art noun|road .
+%gra:	1|2|DET 2|6|NSUBJ 3|2|CASE 4|6|CASE 5|6|DET 6|0|ROOT 7|6|PUNCT
+*CHI:	he's trying to drive .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|drive-Inf-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|3|PUNCT
+*CHI:	the bus is driving .
+%mor:	det|the-Def-Art noun|bus aux|be-Fin-Ind-Pres-S3 verb|drive-Part-Pres-S .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+--
+*CHI:	they're pulling him and giving [^ ew:taking] [^ elexical] him for 0a [^ emorph] walk [^ eu] .
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|pull-Part-Pres-S pron|he-Prs-Acc-S3 cconj|and verb|give-Part-Pres-S pron|he-Prs-Acc-S3 adp|for noun|walk .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|6|CC 6|3|CONJ 7|6|IOBJ 8|9|CASE 9|6|OBL 10|3|PUNCT
+--
+*CHI:	these lights are flashing .
+%mor:	det|this-Def-Dem-Plur noun|light-Plur aux|be-Fin-Ind-Pres-P3 verb|flash-Part-Pres-S .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+--
+*CHI:	&~um the cat needs help .
+%mor:	det|the-Def-Art noun|cat verb|need-Fin-Ind-Pres-S3 noun|help-Acc .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+--
+*CHI:	they're calling him .
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|call-Part-Pres-S pron|he-Prs-Acc-S3 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	he's standing and watching him <and> [/] and see [* m:0ing] [^ emorph] if he's falling [^ eu] .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|stand-Part-Pres-S cconj|and verb|watch-Part-Pres-S pron|he-Prs-Acc-S3 cconj|and verb|see-Inf-S sconj|if pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|fall-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|CC 5|3|CONJ 6|5|OBJ 7|8|CC 8|3|CONJ 9|12|MARK 10|12|NSUBJ 11|12|AUX 12|8|CCOMP 13|3|PUNCT
+--
+*CHI:	he's falling .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|fall-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	&~uh the branch is falling .
+%mor:	det|the-Def-Art noun|branch aux|be-Fin-Ind-Pres-S3 verb|fall-Part-Pres-S .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+--
+*CHI:	they're trying to iceskate in the snow &=laughs .
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|try-Part-Pres-S part|to verb|iceskate-Inf-S adp|in det|the-Def-Art noun|snow .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|8|CASE 7|8|DET 8|5|OBL 9|3|PUNCT
+*CHI:	and xxx .
+%mor:	cconj|and .
+%gra:	1|0|ROOT 2|1|PUNCT
+--
+*CHI:	<&~uh they're &~p> [/] they're making a snowman .
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|make-Part-Pres-S det|a-Ind-Art noun|snowman-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+--
+*CHI:	the daddy's shoveling .
+%mor:	det|the-Def-Art noun|daddy~aux|be-Fin-Ind-Pres-S3 verb|shoveling-Part-Pres-S .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*CHI:	he's shoveling .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|shovel-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	he's throwing snowballs .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|throw-Part-Pres-S noun|snowball-Plur-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	he was throwing an oval one .
+%mor:	pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-Irr verb|throw-Part-Pres-S det|a-Ind-Art noun|oval noun|one-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|DET 5|6|COMPOUND 6|3|OBJ 7|3|PUNCT
+*CHI:	he was throwing a circle [^ ew:round] [^ elexical] one [^ eu] .
+%mor:	pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-Irr verb|throw-Part-Pres-S det|a-Ind-Art noun|circle-Acc num|one .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|OBL-UNMARKED 7|3|PUNCT
+*CHI:	I'm done [^ ns] .
+%mor:	pron|I-Prs-Nom-S1~aux|be-Fin-Ind-Pres-S1 adj|done-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+--
+*CHI:	he's toasting some bread .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|toast-Part-Pres-S det|some-Def-Ind noun|bread-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+--
+*CHI:	she's ready to go night_night .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adj|ready-S1 part|to verb|go-Inf-S adv|nightnight .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|ADVMOD 7|3|PUNCT
+--
+*CHI:	she looks tired .
+%mor:	pron|she-Prs-Nom-S3 verb|look-Fin-Ind-Pres-S3 adj|tired-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|XCOMP 4|2|PUNCT
+--
+*CHI:	&~uh she spilled [^ ew:poured] [^ elexical] the milk into something else [^ eu] .
+%mor:	pron|she-Prs-Nom-S3 verb|spill-Fin-Ind-Past-S3 det|the-Def-Art noun|milk-Acc adp|into pron|something-Ind-S1 adj|else-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|6|CASE 6|2|OBL 7|6|ADVMOD 8|2|PUNCT
+--
+*CHI:	that person and that person and that person 0are [^ ev] crawling [^ eu] .
+%mor:	det|that-Def-Dem-Sing noun|person cconj|and det|that-Def-Dem-Sing noun|person cconj|and det|that-Def-Dem-Sing noun|person verb|crawl-Ger-S .
+%gra:	1|2|DET 2|0|ROOT 3|5|CC 4|5|DET 5|2|CONJ 6|8|CC 7|8|DET 8|9|COMPOUND 9|2|CONJ 10|2|PUNCT
+*CHI:	she's sitting .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|sit-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*CHI:	the dog will wants [^ ev] to play [^ eu] .
+%mor:	det|the-Def-Art noun|dog aux|will-Fin-S verb|want-Fin-Ind-Pres-S3 part|to verb|play-Inf-S .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|4|PUNCT
+*CHI:	but he didn't .
+%mor:	cconj|but pron|he-Prs-Nom-S3 aux|do-Fin-Ind-Past-S3-Irr~part|not .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+--
+*CHI:	the grandma's sitting in the chair .
+%mor:	det|the-Def-Art noun|grandma~aux|be-Fin-Ind-Pres-S3 verb|sitting-Part-Pres-S adp|in det|the-Def-Art noun|chair .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|7|CASE 6|7|DET 7|4|NMOD 8|4|PUNCT
+--
+*CHI:	he's saying ssh .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|say-Part-Pres-S noun|ssh-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	<he> [/] he's being quiet .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 aux|be-Part-Pres-S adj|quiet-S1 .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|COP 4|0|ROOT 5|4|PUNCT
+*CHI:	he's saying ssh [^ ns] .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|say-Part-Pres-S noun|ssh-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	and <she xxx> [>] xxx +/.
+%mor:	cconj|and pron|she-Prs-Nom-S3 +/.
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+--
+*CHI:	she has different scissors in her hand .
+%mor:	pron|she-Prs-Nom-S3 verb|have-Fin-Ind-Pres-S3 adj|different-S1 noun|scissors-Plur-Acc adp|in pron|her-Prs-Gen-S3 noun|hand .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|AMOD 4|2|OBJ 5|7|CASE 6|7|NMOD-POSS 7|2|OBL 8|2|PUNCT
+--
+*CHI:	they're going in the car .
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|go-Part-Pres-S adp|in det|the-Def-Art noun|car .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+--
+*CHI:	there's a bag .
+%mor:	pron|there-Int-S1~verb|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|bag .
+%gra:	1|2|EXPL 2|0|ROOT 3|4|DET 4|2|NSUBJ 5|2|PUNCT
+--
+*CHI:	the girl is sitting in the back .
+%mor:	det|the-Def-Art noun|girl aux|be-Fin-Ind-Pres-S3 verb|sit-Part-Pres-S adp|in det|the-Def-Art noun|back .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|4|PUNCT
+--
+*CHI:	they're sharing the cake .
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|share-Part-Pres-S det|the-Def-Art noun|cake-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+sofia@MacBookAir Downloads % grep -B1 -A2 '^\*CHI:' TD.txt
+%gra:	1|3|OBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+*CHI:	<he wants> [/] she wants to ride [^ elexical] her dolly [^ eu] .
+%mor:	pron|she-Prs-Nom-S3 verb|want-Fin-Ind-Pres-S3 part|to verb|ride-Inf-S pron|her-Prs-Gen-S3 noun|dolly-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|6|NMOD-POSS 6|4|OBJ 7|2|PUNCT
+*CHI:	but <it> [/] she forgot to put her in her desk drawer .
+%mor:	cconj|but pron|she-Prs-Nom-S3 verb|forget-Fin-Ind-Past-S3-Irr part|to verb|put-Inf-S pron|her-Prs-Acc-S3 adp|in pron|her-Prs-Gen-S3 noun|desk noun|drawer .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|OBJ 7|10|CASE 8|10|NMOD-POSS 9|10|COMPOUND 10|5|OBL 11|3|PUNCT
+--
+%gra:	1|4|OBJ 2|1|ADVMOD 3|4|AUX 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|4|PUNCT
+*CHI:	she's running .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|run-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+%gra:	1|4|CC 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|6|ADVMOD 8|4|PUNCT
+*CHI:	he's pointing to go this way and ride <her thing (.) and> [/] that thing .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|point-Part-Pres-S part|to verb|go-Inf-S det|this-Def-Dem-Sing noun|way cconj|and verb|ride-Inf-S det|that-Def-Dem-Sing noun|thing-Acc-Ger .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|7|DET 7|5|OBL-UNMARKED 8|9|CC 9|5|CONJ 10|11|DET 11|9|OBJ 12|3|PUNCT
+--
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|IOBJ 4|2|OBJ 5|4|ADVMOD 6|8|CASE 7|8|DET 8|4|NMOD 9|2|PUNCT
+*CHI:	<the girl> [/] but the daddy's holding the doll .
+%mor:	cconj|but det|the-Def-Art noun|daddy~part|s verb|hold-Part-Pres-S det|the-Def-Art noun|doll-Acc .
+%gra:	1|5|CC 2|3|DET 3|5|NSUBJ 4|3|CASE 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*CHI:	and she's holding her with his hand [^ eu] .
+%mor:	cconj|and pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|hold-Part-Pres-S pron|her-Prs-Acc-S3 adp|with pron|his-Prs-Gen-S3 noun|hand .
+%gra:	1|4|CC 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|8|CASE 7|8|NMOD-POSS 8|4|OBL 9|4|PUNCT
+--
+%gra:	1|3|OBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+*CHI:	the girl's holding her shoes on her hand .
+%mor:	det|the-Def-Art noun|girl~part|s verb|hold-Part-Pres-S pron|her-Prs-Gen-S3 noun|shoe-Plur-Acc adp|on pron|her-Prs-Gen-S3 noun|hand .
+%gra:	1|2|DET 2|4|NSUBJ 3|2|CASE 4|0|ROOT 5|6|NMOD-POSS 6|4|OBJ 7|9|CASE 8|9|NMOD-POSS 9|4|OBL 10|4|PUNCT
+*CHI:	and <&~th> [/] they're wearing their shoes on their foot [^ ew:feet] [^ emorph] [^ eu] .
+%mor:	cconj|and pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|wear-Part-Pres-S pron|their-Prs-Gen-P3 noun|shoe-Plur-Acc adp|on pron|their-Prs-Gen-P3 noun|foot .
+%gra:	1|4|CC 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|NMOD-POSS 6|4|OBJ 7|9|CASE 8|9|NMOD-POSS 9|4|OBL 10|4|PUNCT
+--
+%gra:	1|4|OBJ 2|1|ADVMOD 3|4|AUX 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|4|PUNCT
+*CHI:	the daddy's getting ready for something .
+%mor:	det|the-Def-Art noun|daddy~aux|be-Fin-Ind-Pres-S3 verb|get-Part-Pres-S adj|ready-S1 adp|for pron|something-Ind-S1 .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|XCOMP 6|7|CASE 7|5|OBL 8|4|PUNCT
+*CHI:	<and the girl was> [/] and the boy is getting ready too .
+%mor:	cconj|and det|the-Def-Art noun|boy aux|be-Fin-Ind-Pres-S3 verb|get-Part-Pres-S adj|ready-S1 adv|too .
+%gra:	1|5|CC 2|3|DET 3|5|NSUBJ 4|5|AUX 5|0|ROOT 6|5|XCOMP 7|5|ADVMOD 8|5|PUNCT
+--
+%gra:	1|5|CC 2|5|NSUBJ 3|5|AUX 4|5|MARK 5|0|ROOT 6|5|ADVMOD 7|5|PUNCT
+*CHI:	the dog is holding a shoe so he can [^ modal] go too .
+%mor:	det|the-Def-Art noun|dog aux|be-Fin-Ind-Pres-S3 verb|hold-Part-Pres-S det|a-Ind-Art noun|shoe-Acc sconj|so pron|he-Prs-Nom-S3 aux|can-Fin-S verb|go-Inf-S adv|too .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|10|MARK 8|10|NSUBJ 9|10|AUX 10|4|ADVCL 11|10|ADVMOD 12|4|PUNCT
+--
+%gra:	1|0|ROOT 2|1|IOBJ 3|5|NUMMOD 4|5|AMOD 5|1|OBJ 6|8|CASE 7|8|DET 8|5|NMOD 9|1|PUNCT
+*CHI:	the daddy is looking <in the> [/] in [/] <in the> [/] in .
+%mor:	det|the-Def-Art noun|daddy aux|be-Fin-Ind-Pres-S3 verb|look-Part-Pres-S adp|in .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|ADVMOD 6|4|PUNCT
+*CHI:	I don't know what that word is xxx +...
+%mor:	pron|I-Prs-Nom-S1 aux|do-Fin-Ind-Pres-S1~part|not verb|know-Inf-S pron|what-Int-S1 det|that-Def-Dem-Sing noun|word aux|be-Fin-Ind-Pres-S3 +...
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|OBJ 6|7|DET 7|5|NSUBJ 8|5|ACL-RELCL 9|4|PUNCT
+--
+%gra:	1|3|OBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+*CHI:	the girl is standing in love with her dress [^ other] [^ eu] .
+%mor:	det|the-Def-Art noun|girl aux|be-Fin-Ind-Pres-S3 verb|stand-Part-Pres-S adp|in noun|love adp|with pron|her-Prs-Gen-S3 noun|dress .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|CASE 6|4|OBL 7|9|CASE 8|9|NMOD-POSS 9|4|OBL 10|4|PUNCT
+--
+%gra:	1|4|OBJ 2|1|ADVMOD 3|4|AUX 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|4|PUNCT
+*CHI:	the boy got some dirt <and mud> [/] and &~uh some water and mud .
+%mor:	det|the-Def-Art noun|boy verb|get-Fin-Ind-Past-S3-Irr det|some-Def-Ind noun|dirt-Acc cconj|and det|some-Def-Ind noun|water cconj|and noun|mud .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|8|CC 7|8|DET 8|5|CONJ 9|10|CC 10|8|CONJ 11|3|PUNCT
+*CHI:	<and &~uh &~uh> [/] and that's not good .
+%mor:	cconj|and pron|that-Dem~aux|be-Fin-Ind-Pres-S3 part|not adj|good-S1 .
+%gra:	1|5|CC 2|5|NSUBJ 3|5|COP 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+--
+%gra:	1|5|CC 2|5|NSUBJ 3|5|AUX 4|5|MARK 5|0|ROOT 6|5|ADVMOD 7|5|PUNCT
+*CHI:	the boy's carrying it .
+%mor:	det|the-Def-Art noun|boy~aux|be-Fin-Ind-Pres-S3 verb|carry-Part-Pres-S pron|it-Prs-Acc-S3 .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+--
+%gra:	1|0|ROOT 2|1|IOBJ 3|5|NUMMOD 4|5|AMOD 5|1|OBJ 6|8|CASE 7|8|DET 8|5|NMOD 9|1|PUNCT
+*CHI:	he's gonna [^ cat] carry the bucket .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|carry-Inf-S det|the-Def-Art noun|bucket-Acc .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*CHI:	<and> [/] but [^ econj] the dog splashed the girl [^ eu] .
+%mor:	cconj|but det|the-Def-Art noun|dog verb|splash-Fin-Ind-Past-S3 det|the-Def-Art noun|girl-Acc .
+%gra:	1|4|CC 2|3|DET 3|4|NSUBJ 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+--
+%gra:	1|3|OBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+*CHI:	the boy , <he> [/] he was making something with water and mud .
+%mor:	det|the-Def-Art noun|boy cm|cm pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-Irr verb|make-Part-Pres-S pron|something-Ind-S1 adp|with noun|water cconj|and noun|mud .
+%gra:	1|2|DET 2|6|VOCATIVE 3|2|PUNCT 4|6|NSUBJ 5|6|AUX 6|0|ROOT 7|6|OBJ 8|9|CASE 9|7|NMOD 10|11|CC 11|9|CONJ 12|6|PUNCT
+*CHI:	but the girl dropped her thing .
+%mor:	cconj|but det|the-Def-Art noun|girl verb|drop-Fin-Ind-Past-S3 pron|her-Prs-Gen-S3 noun|thing-Acc-Ger .
+%gra:	1|4|CC 2|3|DET 3|4|NSUBJ 4|0|ROOT 5|6|NMOD-POSS 6|4|OBJ 7|4|PUNCT
+*CHI:	<and> [/] and <the &~g> [/] the other girl was playing .
+%mor:	cconj|and det|the-Def-Art adj|other-S1 noun|girl aux|be-Fin-Ind-Past-S3-Irr verb|play-Part-Pres-S .
+%gra:	1|6|CC 2|4|DET 3|4|AMOD 4|6|NSUBJ 5|6|AUX 6|0|ROOT 7|6|PUNCT
+--
+%gra:	1|4|OBJ 2|1|ADVMOD 3|4|AUX 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|4|PUNCT
+*CHI:	he [^ ew:she] [^ epronoun] tripped on the feet and the leg [^ eu] .
+%mor:	pron|he-Prs-Nom-S3 verb|trip-Fin-Ind-Past-S3 adp|on det|the-Def-Art noun|foot-Plur cconj|and det|the-Def-Art noun|leg .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|CASE 4|5|DET 5|2|OBL 6|8|CC 7|8|DET 8|5|CONJ 9|2|PUNCT
+--
+%gra:	1|4|CC 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|6|ADVMOD 8|4|PUNCT
+*CHI:	<he> [/] he's mad [% “he” referring to the boy who the girl tripped over] .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adj|mad-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+--
+%gra:	1|0|ROOT 2|1|IOBJ 3|5|NUMMOD 4|5|AMOD 5|1|OBJ 6|8|CASE 7|8|DET 8|5|NMOD 9|1|PUNCT
+*CHI:	the bread falled [^ ew:fell] [^ ev] [^ eu] .
+%mor:	det|the-Def-Art noun|bread verb|fall-Fin-Ind-Past-S3 .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+--
+%gra:	1|3|OBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+*CHI:	the girl is raking the leaf pile .
+%mor:	det|the-Def-Art noun|girl aux|be-Fin-Ind-Pres-S3 verb|rake-Part-Pres-S det|the-Def-Art noun|leaf noun|pile-Acc .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|7|DET 6|7|COMPOUND 7|4|OBJ 8|4|PUNCT
+--
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|ADVMOD 6|3|PUNCT
+*CHI:	the girl is xxx the leaf pile .
+%mor:	det|the-Def-Art noun|girl aux|be-Fin-Ind-Pres-S3 det|the-Def-Art noun|leaf noun|pile .
+%gra:	1|2|DET 2|6|NSUBJ 3|6|COP 4|6|DET 5|6|COMPOUND 6|0|ROOT 7|6|PUNCT
+*CHI:	and the other girl is trying to clean xxx +/.
+%mor:	cconj|and det|the-Def-Art adj|other-S1 noun|girl aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|clean-Inf-S +/.
+%gra:	1|6|CC 2|4|DET 3|4|AMOD 4|6|NSUBJ 5|6|AUX 6|0|ROOT 7|8|MARK 8|6|XCOMP 9|6|PUNCT
+--
+%gra:	1|4|OBJ 2|1|ADVMOD 3|4|AUX 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|4|PUNCT
+*CHI:	the girl is trying to clean it up .
+%mor:	det|the-Def-Art noun|girl aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|clean-Inf-S pron|it-Prs-Acc-S3 adp|up .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|6|OBJ 8|6|COMPOUND-PRT 9|4|PUNCT
+*CHI:	the girl is trying to clean it up [^ ns] .
+%mor:	det|the-Def-Art noun|girl aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|clean-Inf-S pron|it-Prs-Acc-S3 adp|up .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|6|OBJ 8|6|COMPOUND-PRT 9|4|PUNCT
+--
+%gra:	1|5|CC 2|5|NSUBJ 3|5|AUX 4|5|MARK 5|0|ROOT 6|5|ADVMOD 7|5|PUNCT
+*CHI:	the little boy is raking [^ earg] [^ eu] .
+%mor:	det|the-Def-Art adj|little-S1 noun|boy aux|be-Fin-Ind-Pres-S3 verb|rake-Part-Pres-S .
+%gra:	1|3|DET 2|3|AMOD 3|5|NSUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*CHI:	and the daddy's raking [^ earg] [^ eu] .
+%mor:	cconj|and det|the-Def-Art noun|daddy~aux|be-Fin-Ind-Pres-S3 verb|raking-Part-Pres-S .
+%gra:	1|5|CC 2|3|DET 3|5|NSUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*CHI:	mother's raking [^ earg] [^ eu] .
+%mor:	noun|mother~aux|be-Fin-Ind-Pres-S3 verb|raking-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+%gra:	1|0|ROOT 2|1|IOBJ 3|5|NUMMOD 4|5|AMOD 5|1|OBJ 6|8|CASE 7|8|DET 8|5|NMOD 9|1|PUNCT
+*CHI:	the doggy <&~I &~I> [/] is right there .
+%mor:	det|the-Def-Art noun|doggy aux|be-Fin-Ind-Pres-S3 adj|right-S1 adv|there .
+%gra:	1|2|DET 2|5|NSUBJ 3|5|COP 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+--
+%gra:	1|3|OBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+*CHI:	the cake has black on it .
+%mor:	det|the-Def-Art noun|cake verb|have-Fin-Ind-Pres-S3 adj|black-S1 adp|on pron|it-Prs-Acc-S3 .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|6|CASE 6|3|OBL 7|3|PUNCT
+*CHI:	but it wasn't sposta .
+%mor:	cconj|but pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-Irr~part|not adj|sposta-S1 .
+%gra:	1|5|CC 2|5|NSUBJ 3|5|COP 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+--
+%gra:	1|4|OBJ 2|1|ADVMOD 3|4|AUX 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|4|PUNCT
+*CHI:	the dog made all this black .
+%mor:	det|the-Def-Art noun|dog verb|make-Fin-Ind-Past-S3-Irr det|all-Def-Tot det|this-Def-Dem-Sing noun|black-Acc .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|6|DET-PREDET 5|6|DET 6|3|OBJ 7|3|PUNCT
+--
+%gra:	1|5|CC 2|5|NSUBJ 3|5|AUX 4|5|MARK 5|0|ROOT 6|5|ADVMOD 7|5|PUNCT
+*CHI:	the cake is all dirty .
+%mor:	det|the-Def-Art noun|cake aux|be-Fin-Ind-Pres-S3 adv|all adj|dirty-S1 .
+%gra:	1|2|DET 2|5|NSUBJ 3|5|COP 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+*CHI:	they hafta make another one .
+%mor:	pron|they-Prs-Nom-P3 aux|hafta-Fin-Ind-Pres-P3 verb|make-Inf-S det|another-Def-Ind noun|one-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+--
+%gra:	1|2|CC 2|0|ROOT 3|2|IOBJ 4|6|NUMMOD 5|6|AMOD 6|2|OBJ 7|9|CASE 8|9|DET 9|6|NMOD 10|2|PUNCT
+*CHI:	she's gonna [^ cat] &~uh wipe it all up .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adv|gonna verb|wipe-Inf-S pron|it-Prs-Acc-S3 det|all-Def-Tot adp|up .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|OBJ 6|7|DET 7|4|COMPOUND-PRT 8|4|PUNCT
+*CHI:	she's gonna wipe it .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|wipe-Inf-S pron|it-Prs-Acc-S3 .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|MARK 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+--
+%gra:	1|3|OBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+*CHI:	the girl's pushing the cart .
+%mor:	det|the-Def-Art noun|girl~part|s verb|push-Part-Pres-S det|the-Def-Art noun|cart-Acc .
+%gra:	1|2|DET 2|4|NSUBJ 3|2|CASE 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*CHI:	the daddy's pushing the cart .
+%mor:	det|the-Def-Art noun|daddy~aux|be-Fin-Ind-Pres-S3 verb|push-Part-Pres-S det|the-Def-Art noun|cart-Acc .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+--
+%gra:	1|4|OBJ 2|1|ADVMOD 3|4|AUX 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|4|PUNCT
+*CHI:	she's trying to get oranges .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|get-Inf-S noun|orange-Plur-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|OBJ 7|3|PUNCT
+--
+%gra:	1|4|CC 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|6|ADVMOD 8|4|PUNCT
+*CHI:	the boy's trying to get (.) some .
+%mor:	det|the-Def-Art noun|boy~aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|get-Inf-S det|some-Def-Ind .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|6|OBJ 8|4|PUNCT
+*CHI:	<what's that> [/] what's that +...
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|that-Dem +...
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+--
+%gra:	1|5|CC 2|5|ADVMOD 3|5|NSUBJ 4|5|AUX 5|0|ROOT 6|10|CASE 7|10|ADVMOD 8|10|DET 9|10|AMOD 10|5|OBL 11|5|PUNCT
+*CHI:	they will [^ modal] fall .
+%mor:	pron|they-Prs-Nom-P3 aux|will-Fin-S verb|fall-Inf-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+%gra:	1|0|ROOT 2|1|IOBJ 3|5|NUMMOD 4|5|AMOD 5|1|OBJ 6|8|CASE 7|8|DET 8|5|NMOD 9|1|PUNCT
+*CHI:	<the the mommy> [/] that [^ ew:those] [^ emorph] people was [^ ew:were] [^ ev] getting some red things [^ eu] .
+%mor:	sconj|that noun|person-Plur aux|be-Fin-Ind-Past-S3-Irr verb|get-Part-Pres-S det|some-Def-Ind adj|red-S1 noun|thing-Plur-Acc .
+%gra:	1|4|MARK 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|7|DET 6|7|AMOD 7|4|OBJ 8|4|PUNCT
+--
+%gra:	1|3|OBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+*CHI:	the mommy spilled it .
+%mor:	det|the-Def-Art noun|mommy verb|spill-Fin-Ind-Past-S3 pron|it-Prs-Acc-S3 .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	he's <&~g> [/] trying to get a cookie .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|get-Inf-S det|a-Ind-Art noun|cookie-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|7|DET 7|5|OBJ 8|3|PUNCT
+*CHI:	<but> [/] he's falling .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|fall-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+%gra:	1|4|OBJ 2|1|ADVMOD 3|4|AUX 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|4|PUNCT
+*CHI:	he's trying to get a cookie [^ ns] .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|get-Inf-S det|a-Ind-Art noun|cookie-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|7|DET 7|5|OBJ 8|3|PUNCT
+*CHI:	but he's too short to .
+%mor:	cconj|but pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adv|too adj|short-S1 part|to .
+%gra:	1|5|CC 2|5|NSUBJ 3|5|COP 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT 7|5|PUNCT
+*CHI:	she hadta get hers .
+%mor:	pron|she-Prs-Nom-S3 aux|hadt-Fin-Ind-Pres-S3 verb|get-Inf-S pron|her-Prs-S3 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+--
+%gra:	1|5|CC 2|5|NSUBJ 3|5|AUX 4|5|MARK 5|0|ROOT 6|5|ADVMOD 7|5|PUNCT
+*CHI:	she's washing the plate .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|wash-Part-Pres-S det|the-Def-Art noun|plate-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+--
+%gra:	1|0|ROOT 2|1|IOBJ 3|5|NUMMOD 4|5|AMOD 5|1|OBJ 6|8|CASE 7|8|DET 8|5|NMOD 9|1|PUNCT
+*CHI:	<the plate> [/] that plate 0is [^ ev] already washed [^ eu] .
+%mor:	det|that-Def-Dem-Sing noun|plate adv|already verb|wash-Fin-Ind-Past-S3 .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+--
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|IOBJ 5|3|OBJ 6|3|ADVMOD 7|3|PUNCT
+*CHI:	the plate 0is already washed [^ ns] .
+%mor:	det|the-Def-Art noun|plate adv|already verb|wash-Fin-Ind-Past-S3 .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+--
+%gra:	1|3|OBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+*CHI:	<&~h> [/] he's trying to pour something on him .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|pour-Inf-S pron|something-Ind-S1 adp|on pron|he-Prs-Acc-S3 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|OBJ 7|8|CASE 8|5|OBL 9|3|PUNCT
+*CHI:	he's mad .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adj|mad-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+--
+%gra:	1|4|OBJ 2|1|ADVMOD 3|4|AUX 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|4|PUNCT
+*CHI:	the mommy , she stand [* m:03s] [^ ev] like this [^ eu] .
+%mor:	det|the-Def-Art noun|mommy cm|cm pron|she-Prs-Nom-S3 verb|stand-Fin-Ind-Pres-S adp|like pron|this-Dem-S1 .
+%gra:	1|2|DET 2|5|DISLOCATED 3|2|PUNCT 4|5|NSUBJ 5|0|ROOT 6|7|CASE 7|5|OBL 8|5|PUNCT
+--
+%gra:	1|5|CC 2|5|NSUBJ 3|5|AUX 4|5|MARK 5|0|ROOT 6|5|ADVMOD 7|5|PUNCT
+*CHI:	the wagon's down there .
+%mor:	det|the-Def-Art noun|wagon~part|s adv|down adv|there .
+%gra:	1|2|DET 2|5|NSUBJ 3|2|CASE 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+*CHI:	she's gonna <skip> [/] (.) trip .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 part|go verb|trip-Inf-S .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+--
+%gra:	1|0|ROOT 2|1|IOBJ 3|5|NUMMOD 4|5|AMOD 5|1|OBJ 6|8|CASE 7|8|DET 8|5|NMOD 9|1|PUNCT
+*CHI:	&~um the buckets and the shovel and the other shovel's [^ ew:are] [^ ev] down there [^ eu] .
+%mor:	det|the-Def-Art noun|bucket-Plur cconj|and det|the-Def-Art noun|shovel cconj|and det|the-Def-Art adj|other-S1 noun|shovel~aux|be-Fin-Ind-Pres-S3 adv|down adv|there .
+%gra:	1|2|DET 2|0|ROOT 3|5|CC 4|5|DET 5|2|CONJ 6|9|CC 7|9|DET 8|9|AMOD 9|2|CONJ 10|12|COP 11|12|ADVMOD 12|2|CONJ 13|2|PUNCT
+--
+%gra:	1|3|OBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+*CHI:	the bus is there .
+%mor:	det|the-Def-Art noun|bus aux|be-Fin-Ind-Pres-S3 adv|there .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+*CHI:	but [^ emorph] they're mad at her [^ eu] .
+%mor:	cconj|but pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 adj|mad-S1 adp|at pron|her-Prs-Acc-S3 .
+%gra:	1|4|CC 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|6|CASE 6|4|OBL 7|4|PUNCT
+--
+%gra:	1|4|OBJ 2|1|ADVMOD 3|4|AUX 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|4|PUNCT
+*CHI:	the dog's in the road .
+%mor:	det|the-Def-Art noun|dog~part|s adp|in det|the-Def-Art noun|road .
+%gra:	1|2|DET 2|6|NSUBJ 3|2|CASE 4|6|CASE 5|6|DET 6|0|ROOT 7|6|PUNCT
+*CHI:	he's trying to drive .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|try-Part-Pres-S part|to verb|drive-Inf-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|3|PUNCT
+*CHI:	the bus is driving .
+%mor:	det|the-Def-Art noun|bus aux|be-Fin-Ind-Pres-S3 verb|drive-Part-Pres-S .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+--
+%gra:	1|4|CC 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|6|ADVMOD 8|4|PUNCT
+*CHI:	they're pulling him and giving [^ ew:taking] [^ elexical] him for 0a [^ emorph] walk [^ eu] .
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|pull-Part-Pres-S pron|he-Prs-Acc-S3 cconj|and verb|give-Part-Pres-S pron|he-Prs-Acc-S3 adp|for noun|walk .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|6|CC 6|3|CONJ 7|6|IOBJ 8|9|CASE 9|6|OBL 10|3|PUNCT
+--
+%gra:	1|0|ROOT 2|1|IOBJ 3|5|NUMMOD 4|5|AMOD 5|1|OBJ 6|8|CASE 7|8|DET 8|5|NMOD 9|1|PUNCT
+*CHI:	these lights are flashing .
+%mor:	det|this-Def-Dem-Plur noun|light-Plur aux|be-Fin-Ind-Pres-P3 verb|flash-Part-Pres-S .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+--
+%gra:	1|3|OBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+*CHI:	&~um the cat needs help .
+%mor:	det|the-Def-Art noun|cat verb|need-Fin-Ind-Pres-S3 noun|help-Acc .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+--
+%gra:	1|4|OBJ 2|1|ADVMOD 3|4|AUX 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|4|PUNCT
+*CHI:	they're calling him .
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|call-Part-Pres-S pron|he-Prs-Acc-S3 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	he's standing and watching him <and> [/] and see [* m:0ing] [^ emorph] if he's falling [^ eu] .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|stand-Part-Pres-S cconj|and verb|watch-Part-Pres-S pron|he-Prs-Acc-S3 cconj|and verb|see-Inf-S sconj|if pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|fall-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|CC 5|3|CONJ 6|5|OBJ 7|8|CC 8|3|CONJ 9|12|MARK 10|12|NSUBJ 11|12|AUX 12|8|CCOMP 13|3|PUNCT
+--
+%gra:	1|4|CC 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|6|ADVMOD 8|4|PUNCT
+*CHI:	he's falling .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|fall-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+%gra:	1|0|ROOT 2|1|IOBJ 3|5|NUMMOD 4|5|AMOD 5|1|OBJ 6|8|CASE 7|8|DET 8|5|NMOD 9|1|PUNCT
+*CHI:	&~uh the branch is falling .
+%mor:	det|the-Def-Art noun|branch aux|be-Fin-Ind-Pres-S3 verb|fall-Part-Pres-S .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+--
+%gra:	1|3|OBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+*CHI:	they're trying to iceskate in the snow &=laughs .
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|try-Part-Pres-S part|to verb|iceskate-Inf-S adp|in det|the-Def-Art noun|snow .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|8|CASE 7|8|DET 8|5|OBL 9|3|PUNCT
+*CHI:	and xxx .
+%mor:	cconj|and .
+%gra:	1|0|ROOT 2|1|PUNCT
+--
+%gra:	1|4|OBJ 2|1|ADVMOD 3|4|AUX 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|4|PUNCT
+*CHI:	<&~uh they're &~p> [/] they're making a snowman .
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|make-Part-Pres-S det|a-Ind-Art noun|snowman-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+--
+%gra:	1|4|CC 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|6|ADVMOD 8|4|PUNCT
+*CHI:	the daddy's shoveling .
+%mor:	det|the-Def-Art noun|daddy~aux|be-Fin-Ind-Pres-S3 verb|shoveling-Part-Pres-S .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*CHI:	he's shoveling .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|shovel-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+--
+%gra:	1|0|ROOT 2|1|IOBJ 3|5|NUMMOD 4|5|AMOD 5|1|OBJ 6|8|CASE 7|8|DET 8|5|NMOD 9|1|PUNCT
+*CHI:	he's throwing snowballs .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|throw-Part-Pres-S noun|snowball-Plur-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	he was throwing an oval one .
+%mor:	pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-Irr verb|throw-Part-Pres-S det|a-Ind-Art noun|oval noun|one-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|DET 5|6|COMPOUND 6|3|OBJ 7|3|PUNCT
+*CHI:	he was throwing a circle [^ ew:round] [^ elexical] one [^ eu] .
+%mor:	pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-Irr verb|throw-Part-Pres-S det|a-Ind-Art noun|circle-Acc num|one .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|OBL-UNMARKED 7|3|PUNCT
+*CHI:	I'm done [^ ns] .
+%mor:	pron|I-Prs-Nom-S1~aux|be-Fin-Ind-Pres-S1 adj|done-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+--
+%gra:	1|3|OBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+*CHI:	he's toasting some bread .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|toast-Part-Pres-S det|some-Def-Ind noun|bread-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+--
+%gra:	1|4|OBJ 2|1|ADVMOD 3|4|AUX 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|4|PUNCT
+*CHI:	she's ready to go night_night .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adj|ready-S1 part|to verb|go-Inf-S adv|nightnight .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|ADVMOD 7|3|PUNCT
+--
+%gra:	1|5|CC 2|5|NSUBJ 3|5|AUX 4|5|MARK 5|0|ROOT 6|5|ADVMOD 7|5|PUNCT
+*CHI:	she looks tired .
+%mor:	pron|she-Prs-Nom-S3 verb|look-Fin-Ind-Pres-S3 adj|tired-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|XCOMP 4|2|PUNCT
+--
+%gra:	1|0|ROOT 2|1|IOBJ 3|5|NUMMOD 4|5|AMOD 5|1|OBJ 6|8|CASE 7|8|DET 8|5|NMOD 9|1|PUNCT
+*CHI:	&~uh she spilled [^ ew:poured] [^ elexical] the milk into something else [^ eu] .
+%mor:	pron|she-Prs-Nom-S3 verb|spill-Fin-Ind-Past-S3 det|the-Def-Art noun|milk-Acc adp|into pron|something-Ind-S1 adj|else-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|6|CASE 6|2|OBL 7|6|ADVMOD 8|2|PUNCT
+--
+%gra:	1|3|OBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+*CHI:	that person and that person and that person 0are [^ ev] crawling [^ eu] .
+%mor:	det|that-Def-Dem-Sing noun|person cconj|and det|that-Def-Dem-Sing noun|person cconj|and det|that-Def-Dem-Sing noun|person verb|crawl-Ger-S .
+%gra:	1|2|DET 2|0|ROOT 3|5|CC 4|5|DET 5|2|CONJ 6|8|CC 7|8|DET 8|9|COMPOUND 9|2|CONJ 10|2|PUNCT
+*CHI:	she's sitting .
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|sit-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*CHI:	the dog will wants [^ ev] to play [^ eu] .
+%mor:	det|the-Def-Art noun|dog aux|will-Fin-S verb|want-Fin-Ind-Pres-S3 part|to verb|play-Inf-S .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|4|PUNCT
+*CHI:	but he didn't .
+%mor:	cconj|but pron|he-Prs-Nom-S3 aux|do-Fin-Ind-Past-S3-Irr~part|not .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+--
+%gra:	1|6|DISCOURSE 2|1|PUNCT 3|6|NSUBJ-OUTER 4|3|ADVMOD 5|6|AUX 6|0|ROOT 7|9|CASE 8|9|DET 9|6|OBL 10|6|PUNCT
+*CHI:	the grandma's sitting in the chair .
+%mor:	det|the-Def-Art noun|grandma~aux|be-Fin-Ind-Pres-S3 verb|sitting-Part-Pres-S adp|in det|the-Def-Art noun|chair .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|7|CASE 6|7|DET 7|4|NMOD 8|4|PUNCT
+--
+%gra:	1|4|OBL 2|4|AUX 3|4|MARK 4|0|ROOT 5|9|CASE 6|9|ADVMOD 7|9|DET 8|9|AMOD 9|4|OBL 10|4|PUNCT
+*CHI:	he's saying ssh .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|say-Part-Pres-S noun|ssh-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	<he> [/] he's being quiet .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 aux|be-Part-Pres-S adj|quiet-S1 .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|COP 4|0|ROOT 5|4|PUNCT
+*CHI:	he's saying ssh [^ ns] .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|say-Part-Pres-S noun|ssh-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	and <she xxx> [>] xxx +/.
+%mor:	cconj|and pron|she-Prs-Nom-S3 +/.
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+--
+%gra:	1|0|ROOT 2|1|IOBJ 3|5|NUMMOD 4|5|AMOD 5|1|OBJ 6|8|CASE 7|8|DET 8|5|NMOD 9|1|PUNCT
+*CHI:	she has different scissors in her hand .
+%mor:	pron|she-Prs-Nom-S3 verb|have-Fin-Ind-Pres-S3 adj|different-S1 noun|scissors-Plur-Acc adp|in pron|her-Prs-Gen-S3 noun|hand .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|AMOD 4|2|OBJ 5|7|CASE 6|7|NMOD-POSS 7|2|OBL 8|2|PUNCT
+--
+%gra:	1|3|OBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+*CHI:	they're going in the car .
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|go-Part-Pres-S adp|in det|the-Def-Art noun|car .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+--
+%gra:	1|4|OBJ 2|1|ADVMOD 3|4|AUX 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|4|PUNCT
+*CHI:	there's a bag .
+%mor:	pron|there-Int-S1~verb|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|bag .
+%gra:	1|2|EXPL 2|0|ROOT 3|4|DET 4|2|NSUBJ 5|2|PUNCT
+--
+%gra:	1|4|CC 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|6|ADVMOD 8|4|PUNCT
+*CHI:	the girl is sitting in the back .
+%mor:	det|the-Def-Art noun|girl aux|be-Fin-Ind-Pres-S3 verb|sit-Part-Pres-S adp|in det|the-Def-Art noun|back .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|4|PUNCT
+--
+%gra:	1|0|ROOT 2|1|IOBJ 3|5|NUMMOD 4|5|AMOD 5|1|OBJ 6|8|CASE 7|8|DET 8|5|NMOD 9|1|PUNCT
+*CHI:	they're sharing the cake .
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|share-Part-Pres-S det|the-Def-Art noun|cake-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+sofia@MacBookAir Downloads % : grep ‘\*CHI’ > chi_TD.txt 
+sofia@MacBookAir Downloads % grep “^%mor:” TD.txt 
+sofia@MacBookAir Downloads % grep '^%mor:' TD.txt | grep -oE 'verb\|[^[:space:]]+'
+verb|happen-Part-Pres-S
+verb|want-Fin-Ind-Pres-S3
+verb|ride-Inf-S
+verb|forget-Fin-Ind-Past-S3-Irr
+verb|put-Inf-S
+verb|happen-Part-Pres-S
+verb|run-Part-Pres-S
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|point-Part-Pres-S
+verb|go-Inf-S
+verb|ride-Inf-S
+verb|tell-Fin-Imp-S
+verb|tell-Fin-Imp-S
+verb|hold-Part-Pres-S
+verb|hold-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|hold-Part-Pres-S
+verb|wear-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|get-Part-Pres-S
+verb|get-Part-Pres-S
+verb|happen-Inf-S
+verb|hold-Part-Pres-S
+verb|go-Inf-S
+verb|tell-Fin-Imp-S
+verb|look-Part-Pres-S
+verb|know-Inf-S
+verb|happen-Part-Pres-S
+verb|stand-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|get-Fin-Ind-Past-S3-Irr
+verb|happen-Inf-S
+verb|carry-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|carry-Inf-S
+verb|splash-Fin-Ind-Past-S3
+verb|happen-Part-Pres-S
+verb|make-Part-Pres-S
+verb|drop-Fin-Ind-Past-S3
+verb|play-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|trip-Fin-Ind-Past-S3
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|tell-Fin-Imp-S
+verb|fall-Fin-Ind-Past-S3
+verb|happen-Part-Pres-S
+verb|rake-Part-Pres-S
+verb|say-Inf-S
+verb|try-Part-Pres-S
+verb|clean-Inf-S
+verb|happen-Part-Pres-S
+verb|try-Part-Pres-S
+verb|clean-Inf-S
+verb|try-Part-Pres-S
+verb|clean-Inf-S
+verb|happen-Inf-S
+verb|rake-Part-Pres-S
+verb|raking-Part-Pres-S
+verb|raking-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|happen-Part-Pres-S
+verb|have-Fin-Ind-Pres-S3
+verb|happen-Part-Pres-S
+verb|make-Fin-Ind-Past-S3-Irr
+verb|happen-Inf-S
+verb|make-Inf-S
+verb|tell-Fin-Imp-S
+verb|wipe-Inf-S
+verb|wipe-Inf-S
+verb|happen-Part-Pres-S
+verb|push-Part-Pres-S
+verb|push-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|try-Part-Pres-S
+verb|get-Inf-S
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|try-Part-Pres-S
+verb|get-Inf-S
+verb|knock-Fin-Ind-Past-S3
+verb|happen-Inf-S
+verb|fall-Inf-S
+verb|tell-Fin-Imp-S
+verb|get-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|spill-Fin-Ind-Past-S3
+verb|try-Part-Pres-S
+verb|get-Inf-S
+verb|fall-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|try-Part-Pres-S
+verb|get-Inf-S
+verb|get-Inf-S
+verb|happen-Inf-S
+verb|wash-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|wash-Fin-Ind-Past-S3
+verb|tell-Inf-S
+verb|wash-Fin-Ind-Past-S3
+verb|happen-Part-Pres-S
+verb|try-Part-Pres-S
+verb|pour-Inf-S
+verb|happen-Part-Pres-S
+verb|stand-Fin-Ind-Pres-S
+verb|happen-Inf-S
+verb|trip-Inf-S
+verb|tell-Fin-Imp-S
+verb|happen-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|try-Part-Pres-S
+verb|drive-Inf-S
+verb|drive-Part-Pres-S
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|pull-Part-Pres-S
+verb|give-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|flash-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|need-Fin-Ind-Pres-S3
+verb|happen-Part-Pres-S
+verb|call-Part-Pres-S
+verb|stand-Part-Pres-S
+verb|watch-Part-Pres-S
+verb|see-Inf-S
+verb|fall-Part-Pres-S
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|fall-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|fall-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|try-Part-Pres-S
+verb|iceskate-Inf-S
+verb|happen-Part-Pres-S
+verb|make-Part-Pres-S
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|shoveling-Part-Pres-S
+verb|shovel-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|throw-Part-Pres-S
+verb|throw-Part-Pres-S
+verb|throw-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|toast-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|go-Inf-S
+verb|happen-Inf-S
+verb|look-Fin-Ind-Pres-S3
+verb|tell-Fin-Imp-S
+verb|spill-Fin-Ind-Past-S3
+verb|happen-Part-Pres-S
+verb|crawl-Ger-S
+verb|sit-Part-Pres-S
+verb|want-Fin-Ind-Pres-S3
+verb|play-Inf-S
+verb|happen-Part-Pres-S
+verb|sitting-Part-Pres-S
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|take-Part-Pres-S
+verb|happen-Inf-S
+verb|say-Part-Pres-S
+verb|say-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|have-Fin-Ind-Pres-S3
+verb|happen-Part-Pres-S
+verb|go-Part-Pres-S
+verb|happen-Part-Pres-S
+verb|be-Fin-Ind-Pres-S3
+verb|go-Part-Pres-S
+verb|happen-Inf-S
+verb|sit-Part-Pres-S
+verb|tell-Fin-Imp-S
+verb|share-Part-Pres-S
+sofia@MacBookAir Downloads % grep '^%mor:' TD.txt | grep -oE 'verb\|[^[:space:]]+' | wc -l 
+     178
+sofia@MacBookAir Downloads % EXIT
+zsh: command not found: EXIT
+sofia@MacBookAir Downloads % exit
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+Deleting expired sessions...      26 completed.
+
+Script done, output file is lab4_session.txt
+sofia@MacBookAir Downloads % 
